@@ -1,0 +1,42 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background: url(images/icecream.jpg);
+}
+
+/* Structure */
+
+#content{
+    background: #F2AB6D;
+    padding: 5px;
+    width: 80%;
+    margin: 5px;
+    /* centered horizontrally */
+    margin: auto;
+    border-radius: 5px;
+}
+
+/* Navigation */
+
+#main-nav a {
+    /* remove underline of the links */
+    text-decoration: none;
+    background: pink;
+    color: yellow;
+    padding: 5px;
+    border-radius: 2px;
+}
+/* when you hover over an element it will be styled this way__*/
+#main-nav a:hover {
+    background: brown;
+}
+
+
+/* Typography*/
+
+h1{
+    color: #594E45;
+}
+
+.special {
+    color: deepskyblue;
+}
