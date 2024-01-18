@@ -1,14 +1,14 @@
 body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #fefbe9;
+    background: #f8f9fa;
 }
 
 /* Structure */
 
 #content{
-    background: #e1eedd;
+    background: #e2ece9;
     padding: 5px;
-    width: 80%;
+    width: 95%;
     margin: 5px;
     /* centered horizontrally */
     margin: auto;
@@ -17,8 +17,8 @@ body{
 
 #assignment-nav a{
     text-decoration: none;
-    color: #183a1d;
-    
+    color: black;
+    margin: 20px;
     
 }
 
@@ -26,9 +26,21 @@ body{
 /* Typography*/
 
 h1{
-    color: #f6c453;
+    color: #2f3e46;
+    margin: 20px;
 }
 
 h2{
-    color:black;
+    color:#2f3e46;
+    margin: 20px;
+}
+
+h3{
+    color: #2f3e46;
+    margin: 20px;
+}
+
+p{
+    color: black;
+    margin: 20px;
 }
