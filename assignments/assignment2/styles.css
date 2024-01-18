@@ -1,23 +1,81 @@
 body{
-    font-family:Arial, Helvetica, sans-serif;
-    background: lightgray;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #8da9c4;
 }
 
 /* Structure */
 
 #content{
-    background: #fff;
+    background: #eef4ed;
     padding: 5px;
     width: 80%;
     margin: 5px;
     /* centered horizontrally */
     margin: auto;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 
+#first-nav a{
+    text-decoration: none;
+    color: grey;
+    background: lightgray;
+    padding: 2.5px;
+    border-radius: 6px;
+    margin-inline-start: 20px;
+}
+
+#first-nav a:hover{
+    background: #98c1d9;
+    color: #0b2545;
+}
 
 /* Typography*/
 
 h1{
-    color: darkslategray;
+    color: #0b2545;
+    margin: 20px;
+}
+
+h2{
+    color: #0b2545;
+    margin: 20px;
+}
+
+/* Styling P */
+
+p{
+    margin: 20px;
+}
+
+
+/* Styling imgs */
+
+img{
+    width: 400px;
+    border: 2px solid black;
+    padding: 3px;
+    background-color: #0b2545;
+    margin: 25px;
+    margin-left: 120px;
+}
+
+/* Styling Table */
+
+table{
+    border: 1.5px solid grey;
+    padding: 10px;
+    background-color: lightgray;
+    margin: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    /* this is how to full-width tables */
+    width: 60%;
+    /* to align the texts */
+    text-align: left;
+    /* horizontal dividers */    
+}
+
+th, td {
+    border-bottom: 1px solid grey;
+    padding: 5px;
 }

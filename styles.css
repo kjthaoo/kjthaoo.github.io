@@ -1,0 +1,34 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fefbe9;
+}
+
+/* Structure */
+
+#content{
+    background: #e1eedd;
+    padding: 5px;
+    width: 80%;
+    margin: 5px;
+    /* centered horizontrally */
+    margin: auto;
+    border-radius: 5px;
+}
+
+#assignment-nav a{
+    text-decoration: none;
+    color: #183a1d;
+    
+    
+}
+
+
+/* Typography*/
+
+h1{
+    color: #f6c453;
+}
+
+h2{
+    color:black;
+}
