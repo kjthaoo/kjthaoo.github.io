@@ -16,19 +16,6 @@ body{
     border-radius: 5px;
 }
 
-#assignment-nav a{
-    text-decoration: none;
-    color: black;
-    margin: 20px;
-    
-}
-
-#assignment-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-
 /* Typography*/
 
 h1{
@@ -47,6 +34,14 @@ h3 {
     color:#2f3e46;
     margin: 20px;
 }
+a {
+    text-decoration: none;
+    color: #588157;
+}
+
+a:hover{
+    color: #344e41;
+}
 
 p {
     color: black;
@@ -57,19 +52,60 @@ ul {
     list-style: none; /* remove bullet point */
 }
 
+#assignment1 {
+    background-color: #ccd5ae;
+   }
+
+#assignment2 {
+    background-color: #ccd5ae;
+   }
+
+#assignment3 {
+    background-color: #ccd5ae;
+   }
+
 /* Larger Resolutions */
 @media(min-width:600px) {
    .flex-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: 50%;
     width: 30%;
     border: 1px solid black;
-    margin: 10px;
+    margin: 0 auto;
    }
 
    .boxes {
     display: flex;
     flex-direction: row;
    }
+}
+
+/* Smaller Resolutions */
+@media(max-width:599px) {
+    .flex-container img{
+     /* this will make the img src (placeholders) the same as the larger resolutions */
+       display: block; 
+       margin: 0 auto;
+    }
+
+    .boxes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .flex-container {
+        width: 80%;
+        margin: 10px;
+        border: 1px solid black;
+    }
+
+    #assignment1, 
+    #assignment2, 
+    #assignment3 {
+        background-color: #ccd5ae;
+    }   
 }
