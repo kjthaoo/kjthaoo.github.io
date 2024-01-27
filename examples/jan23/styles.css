@@ -1,0 +1,21 @@
+:root {
+    --background-color: lightblue;
+    --primary-color: yellow;
+    --secondary-color: lightgrey;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    background: var(--background-color);
+}
+
+/* Structure */
+
+#content {
+    background: white;
+    padding: 5px;
+    width: 80%;
+    /* center horizontally */
+    margin: auto;
+    border-radius: 5px;
+}

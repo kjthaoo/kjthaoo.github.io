@@ -16,6 +16,11 @@ body{
     border-radius: 5px;
 }
 
+#content img { /* to keep the img from going over the borders */
+    max-width: 70%;
+    max-height: 100%;
+}
+
 /* Typography*/
 
 h1{
@@ -63,6 +68,14 @@ ul {
 #assignment3 {
     background-color: #ccd5ae;
    }
+
+#part1 {
+    background-color: #eae7c3;
+}
+
+#part2 {
+    background-color: #eae7c3;
+}
 
 /* Larger Resolutions */
 @media(min-width:600px) {
