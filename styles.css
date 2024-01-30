@@ -68,6 +68,9 @@ ul {
 #assignment3 {
     background-color: #ccd5ae;
    }
+#assignment5 {
+    background-color: #ccd5ae;
+   }
 
 #part1 {
     background-color: #eae7c3;
@@ -118,7 +121,8 @@ ul {
 
     #assignment1, 
     #assignment2, 
-    #assignment3 {
+    #assignment3,
+    #assignment5 {
         background-color: #ccd5ae;
     }   
 }

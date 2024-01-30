@@ -1,93 +1,286 @@
 /* Structure */
+#body {
+    margin: 0px;
+}
 
 #main-header {
-    text-align: left;
-    padding: 5px;
-    margin: 20px;
-    background-color: lightblue;
-
-
+    background-color: black;
+    padding: 1px;
+    margin-top: 1px;  
 }
 
 #main-content {
     background-color: white;
-    padding: 5px;
-    margin: 20px;
-    background-color: lightblue;
-
+    padding: 1px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 #main-footer {
-    background-color: lightblue;
-    padding: 5px;
+    background-color: black;
 }
 
-.box1 {
-    background-color: lightblue;
-    border: 2px solid black;
+.column, .rows {
+    padding: 1px;
+    margin: 1px;
+    border-radius: 2px;
 }
 
-.box2 {
-    background-color: pink;
-    border: 2px solid black;
+.sidebox {
+    background-color: white;
+    border-top: 2px solid lightgray;
+    margin: 1px;
 }
 
-.box3 {
-    background-color: lightgreen;
-    border: 2px solid black;
+.rightbox{
+    background-color: white;
+    border-top: 2px solid lightgray;
+} 
+
+.rows {
+    background-color: #73000a;
 }
+th {
+    text-align: left;
+    border-bottom: 1px solid white;
+}
+.tables {
+    background-color: #73000a;
+    color: white;
+    width: 100%;
+    margin: 10px;
+    padding: 30px;
+    
+} 
+
 
 
 /* Navigation */
 
+#main-nav ul {
+    padding-left: 0;
+    text-align: center;
+    font-size: 9px;
+    float:right; 
+    width: 40%;
+    white-space: nowrap;
+    
+}
+
+#footer-nav ul {
+    padding-left: 0;
+    text-align: center;
+    font-size: 9px;
+    width: 40%;
+    white-space: nowrap;
+    display: inline-block;
+}
+.tables {
+    text-align: left;
+    color: white;
+    background-color: #73000a;
+    padding: 8px;
+    margin-top: 0%;
+    margin-block-end: 0%;
+}
 #main-nav li {
     list-style-type: none;
+    padding: 5px;
+    background-color: black;
+    padding-top: 7.1px;
+
+}
+
+#main-nav a {
+    text-decoration: none;
+    color: white;
+}
+#main-nav a:hover {
+    background-color: red;
+}
+
+#footer-nav li {
+    list-style-type: none;
+    padding: 10px;
+    background-color: black;
+    text-align: center;
+
+}
+#footer-nav ul {
+    text-align: center;
+    margin: auto;
+}
+
+#footer-nav a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+
+}
+
+#footer-nav a:hover {
+    background-color: red;
+}
+#side-nav a {
+    color: black;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 1px;    
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#side-nav li {
+    list-style-type: none; /* removes bullets */
 }
 
 /* Typography */
 body {
-    font-family:Arial, Helvetica, sans-serif;
-    color:darkslategray;
+    font-family: Berlingske Sans;
+    color:#73000a;
 }
-
-#main-header {
+ 
+#main-header h1 {
     text-align: left;
-
+    color: white;
+    padding: 1px;
+    margin: 10px;
 }
 
-#main-content {
+#main-header h2 {
+    color: white;
+    font-size: 9px;
+    float:right; 
+    margin-right: 2px;
+    padding: 0px;
+}
+#main-header h3 {
+    color: white;
+    font-size: 15px;
+    padding: 1px;
+    margin: 10px;
+}
+#main-header h4 {
     text-align: left;
+    color: white;
+    background-color: #73000a;
+    padding: 8px;
+    margin-top: 0%;
+    margin-block-end: 0%;
 
 }
-
-#main-footer {
+#main-content h4 {
+    color: #73000a;
+}
+#main-content h2 {
     text-align: left;
-
+    color: #73000a;
 }
+#main-content p {
+    color: black;
+}
+#main-footer ul {
+    text-align: center;
+}
+
+/* Some other displays */
+.idea {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.second-text h4 {
+    text-align: center;
+}
+.side-nav ul {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    
+}
+.rows {
+    color: white;
+}
+
+.little-box,
+.little-box2 {
+    display:block;
+    width: 100%;
+    clear: both;
+}
+.little-box2 {
+    margin-top: 20px;
+}
+
 
 /* Larger Resolutions */
-@media(min-width: 600px) {
+@media(min-width:600px) {
     #main-nav ul,
+    #footer-nav ul, 
     .flex-container {
         display: flex;
     }
 
-    .box1 {
-        flex: 1;
+    .vertical h4, p {
+        flex-wrap: wrap;
     }
 
-    .box2 {
-        flex: 1;
+    #main-nav li, 
+    .sidebox {
+        flex: .5; /* reminders that these are the ratios of the boxes */
     }
 
-    .box3 {
-        flex: 1;
+    .rightbox {
+        flex: 1.5;
     }
-    
+
+    #side-nav li {
+        text-align: left;
+    }
+
+    .rows {
+        display: flex;
+    }
+
+    .idea {
+        flex-direction: row;
+    }
+
+    /* this helped make the placeholders EVENLY SPACED ON THE PAGE  */
+    .second-text p {
+        text-align: left;
+        margin: 10px;
+    }
+
+    .image-container {
+        text-align: center;
+        display: block;
+        margin: auto;
+        max-width: 100%;
+    }
+    .tables {
+        flex: 3;
+    }
+    .table1,
+    .table2,
+    .table3 {
+        flex-wrap: wrap;
+    }
 
 }
 
+/* smaller resolutions */
 
-
-
-/* Smaller Resolutions */
+@media(max-width: 599px) {
+    .image-container {
+        text-align: center;
+        max-width: 100%;
+        margin: auto;
+    }
+}
