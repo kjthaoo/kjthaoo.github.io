@@ -1,0 +1,17 @@
+/* Structure */
+
+#cat {
+    max-width: 20;
+}
+.hidden {
+    display: none;
+}
+/* Typography */
+
+h1 {
+    color: grey;
+}
+.special {
+    background: lightblue;
+    size: 2em;
+}

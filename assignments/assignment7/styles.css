@@ -1,6 +1,6 @@
 body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #f8f9fa;
+    background: #f6fff8;
     margin: 0;
 }
 
@@ -24,28 +24,20 @@ body{
 /* Typography*/
 
 h1{
-    color: #2f3e46;
+    color: #3C5D4B;
     margin: 20px;
     text-align: center;
 }
 
 h2{
-    color:#2f3e46;
+    color:#5B8B70;
     margin: 20px;
     text-align: center;
 }
 
 h3 {
-    color:#2f3e46;
+    color:#74A48A;
     margin: 20px;
-}
-a {
-    text-decoration: none;
-    color: #588157;
-}
-
-a:hover{
-    color: #344e41;
 }
 
 p {
@@ -57,33 +49,32 @@ ul {
     list-style: none; /* remove bullet point */
 }
 
-#assignment1 {
-    background-color: #ccd5ae;
+#box1 {
+    background-color: #cce3de;
    }
 
-#assignment2 {
-    background-color: #ccd5ae;
+#box2 {
+    background-color: #cce3de;
    }
 
-#assignment3 {
-    background-color: #ccd5ae;
+#box3 {
+    background-color: #cce3de;
    }
 
-#assignment5 {
-    background-color: #ccd5ae;
-   }
-
-#assignment7 {
-    background-color: #ccd5ae;
-   }
-
-#part1 {
-    background-color: #eae7c3;
+#rotationSlider {
+    width: 90%;
+    margin-top: 10px;
 }
 
-#part2 {
-    background-color: #eae7c3;
+.star-image {
+    width: 30px;
+    height: 30px;
 }
+
+footer p {
+    text-align: center;
+}
+
 
 /* Larger Resolutions */
 @media(min-width:600px) {
@@ -91,22 +82,16 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 50%;
+    height: 650px;
     width: 30%;
     border: 1px solid black;
     margin: 0 auto;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
    }
 
    .boxes {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-   }
-
-   .boxes > div {
-    flex: 1 1 33.33%; /* This changes how the boxes look like all together! Love this look!*/
-    margin: 10px;
    }
 }
 
@@ -127,15 +112,14 @@ ul {
     
     .flex-container {
         width: 80%;
-        margin: 10px;
         border: 1px solid black;
     }
 
-    #assignment1, 
-    #assignment2, 
-    #assignment3,
-    #assignment5,
-    #assignment7 {
-        background-color: #ccd5ae;
+    #box1, 
+    #box2, 
+    #box3 {
+        background-color: #cce3de;
+        width: 100%;
+        text-align: center;
     }   
 }
