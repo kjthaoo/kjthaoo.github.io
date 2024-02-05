@@ -1,0 +1,114 @@
+/* Structure */
+#body {
+    margin: 0.1px;
+}
+
+#main-header {
+    background-color: grey;
+    padding: 1px;
+    width: auto;
+    height: 100px;
+}
+
+#main-content {
+    background-color: darkgray;
+    padding: 1px;
+    width: auto;
+    height: 750px;
+    
+}
+
+.projects {
+    background-color: white;
+    width: auto;
+    height: 750px;
+}
+
+.projects img {
+    padding-top: 50px;
+    margin-left: 50px;
+}
+
+#main-footer {
+    background-color: grey;
+    width: auto;
+    height: 80px;
+}
+/* Navigation */
+
+#main-nav ul {
+    padding-left: 0;
+    text-align: center;
+    font-size: 9px;
+    float: right;
+    width: 40%;
+    white-space: nowrap;
+}
+
+#main-nav li {
+    list-style-type: none;
+    padding: 5px;
+    background-color: grey;
+    
+}
+
+#main-nav a {
+    text-decoration: none;
+    color:white;
+}
+
+/* Typography */
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+
+#main-header h3 {
+    font-size: 10px;
+    margin-left: 50px;
+    padding-top: 35px;
+    width: 500px;
+}
+
+#main-content h1 {
+    font-size: 50px;
+    margin-left: 50px;
+    padding-top: 250px;
+}
+
+#main-nav {
+    font-size: 10px;
+}
+
+.projects h3 {
+    font-size: 20px;
+    color: black;
+    margin-left: 50px;
+}
+
+
+/* Larger Resolutions */
+@media(min-width:600px) {
+    #main-nav ul,
+    .flex-container {
+        display: flex;
+    }
+
+    #main-nav li,
+    .sidebox {
+        flex: .5;
+    }
+
+    .box1,
+    .box2,
+    .box3 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+/* Smaller Resolutions */
+@media(max-width:599px) {
+    
+}
