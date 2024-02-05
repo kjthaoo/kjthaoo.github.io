@@ -11,23 +11,14 @@
 }
 
 #main-content {
-    background-color: darkgray;
+    background-color: white;
     padding: 1px;
     width: auto;
     height: 650px;
-    
 }
 
-.projects {
-    background-color: white;
-    width: auto;
-    height: 750px;
-    padding: 1px;
-}
-
-.projects img {
-    padding-top: 50px;
-    margin-left: 50px;
+#main-content img {
+    padding-top: 50px;   
 }
 
 #main-footer {
@@ -65,36 +56,49 @@ body {
 }
 
 #main-header h3 {
-    font-size: 10px;
+    font-size: 12px;
     margin-left: 50px;
     padding-top: 35px;
     width: 500px;
 }
 
 #main-content h1 {
-    font-size: 50px;
+    font-size: 20px;
     margin-left: 50px;
-    padding-top: 250px;
+    padding-top: 40px;
+    color: black;
+}
+
+#main-content h3 {
+    font-size: 12px;
+    margin-left: 50px;
+    padding-top: 40px;
+    color: black;
+}
+
+#main-content p {
+    font-size: 10px;
+    color: black;
 }
 
 #main-nav {
     font-size: 10px;
 }
 
-.projects h3 {
-    font-size: 20px;
+.process h3 {
+    font-size: 12px;
+    margin-left: 0px;
+    padding-top: 35px;
     color: black;
-    margin-left: 50px;
+    text-align: left;
 }
 
-.projects p {
-    font-size: 15px;
+.process p {
+    font-size: 10px;
     color: black;
-    margin-left: 50px;
-    margin-bottom: 10px;
-    max-width: 400px;
-
+    text-align: center;
 }
+
 
 /* Larger Resolutions */
 @media(min-width:600px) {
@@ -103,26 +107,28 @@ body {
         display: flex;
     }
 
-    #main-nav li,
-    .sidebox {
+    #main-nav li {
         flex: .5;
     }
 
-    .box1,
-    .box2,
-    .box3 {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-right: 20px;
-        margin-left: 20px;
-        margin-bottom: 10px;
+    #main-content {
+        display: flex; /* this makes the 'about me' go on the right side of the img src */
+        align-items: center;
     }
 
-    .projects {
+    .process {
         display: flex;
-        align-items: center; /* This centers it vertically */
-        justify-content: auto; /* This centers it horizontally */
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .box1,
+    .box2,
+    .box3,
+    .box4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
