@@ -25,4 +25,6 @@ box3.addEventListener("click", function() {
     starImg.classList.add("star-image");
 
     this.appendChild(starImg);
-})
+});
+
+//should i have the document.getElementID stuff here?

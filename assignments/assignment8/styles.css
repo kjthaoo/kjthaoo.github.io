@@ -1,0 +1,184 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f6fff8;
+    margin: 0;
+}
+
+/* Structure */
+
+#content{
+    padding: 5px;
+    width: 95%;
+    margin: 5px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+#content img { 
+    max-width: 70%;
+    max-height: 100%;
+}
+
+/* Typography*/
+
+h1{
+    color: #5d3c3c;
+    margin: 20px;
+    text-align: center;
+}
+
+h2{
+    color:#8b5b5b;
+    margin: 20px;
+    text-align: center;
+}
+
+h3 {
+    color:#a47474;
+    margin: 20px;
+}
+
+h4 {
+    /* decreasing the space between them */
+    margin-top: 2px;
+    margin-bottom: 2px;
+    text-align: left;
+}
+
+p {
+    color: black;
+    margin: 20px;
+}
+
+ul {
+    list-style: none; 
+}
+
+#box1 {
+    background-color: #e3cfcc;
+   }
+
+#box2 {
+    background-color: #e3cfcc;
+   }
+
+#imageSlider {
+    width: 90%;
+    margin-top: 10px;
+}
+
+footer p {
+    text-align: center;
+}
+
+/* The slider - referenced w3schools for -webkit */
+.slider {
+    -webkit-appearance: none; 
+    width: 100%;
+    height: 25px;
+    background: rgb(255, 255, 255);
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance:none;
+    width: 20px;
+    height: 20px;
+    background: #a47497;
+    cursor: pointer;
+}
+
+
+/* Navigation */
+#main-nav ul {
+    text-align: center;
+    font-size: 15px;
+}
+
+#main-nav li {
+    display: inline-block;
+    margin-inline-end: 40px;
+}
+
+#main-nav a{
+    text-decoration: none;
+    color: #a47474;
+    text-align: center;
+}
+
+#main-content div {
+    width: 400px;
+    height: 100px;
+}
+
+/* Larger Resolutions */
+@media(min-width:600px) {
+   .flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 650px;
+    width: 30%;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+   }
+
+   .boxes {
+    display: flex;
+    flex-direction: row;
+   }
+
+   #box1,
+   #box2 {
+    border: 1px solid black;
+    width: 400px;
+    height: 700px;
+   }
+
+   .toggle-menu {
+    display: flex;
+    align-items: center;
+   }
+
+   #toggle-arrow {
+    text-decoration: none;
+    color: red;
+    cursor: pointer;
+   }
+
+   #menu-items {
+    display: none;
+   }
+
+   #menu-items.active {
+    display: block;
+   }
+}
+
+/* Smaller Resolutions */
+@media(max-width:599px) {
+    .flex-container {
+        width: 80%;
+     }
+ 
+     .boxes {
+        display: flex;
+        flex-direction: column;
+     }
+     
+     .flex-container {
+        width: 80%;
+     }
+ 
+     #box1, 
+     #box2 {
+        background-color: #e3cfcc;
+        width: 400px;
+        height: 700px;
+        text-align: center;
+        /* centers and makes small res look like big res */
+        display: flex;
+        flex-direction: column;
+        align-items: center
+     }   
+ }

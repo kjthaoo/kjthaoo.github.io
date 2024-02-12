@@ -98,7 +98,6 @@ footer p {
 /* Smaller Resolutions */
 @media(max-width:599px) {
     .flex-container img{
-     /* this will make the img src (placeholders) the same as the larger resolutions */
        display: block; 
        margin: 0 auto;
     }
@@ -106,8 +105,6 @@ footer p {
     .boxes {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
     }
     
     .flex-container {
@@ -116,10 +113,11 @@ footer p {
     }
 
     #box1, 
-    #box2, 
+    #box2,
     #box3 {
         background-color: #cce3de;
-        width: 100%;
+        width: 200px;
+        height: 500px;
         text-align: center;
     }   
 }
