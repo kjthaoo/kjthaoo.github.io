@@ -77,6 +77,10 @@ ul {
     background-color: #ccd5ae;
    }
 
+#assignment8 {
+    background-color: #ccd5ae;
+   }
+
 #part1 {
     background-color: #eae7c3;
 }
@@ -138,7 +142,8 @@ ul {
     #assignment2, 
     #assignment3,
     #assignment5,
-    #assignment7 {
+    #assignment7,
+    #assignment8 {
         background-color: #ccd5ae;
     }   
 }
