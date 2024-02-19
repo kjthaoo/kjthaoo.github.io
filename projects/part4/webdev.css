@@ -15,10 +15,7 @@ body {
     padding: 1px;
     width: 100%;
     height: 650px;
-}
-#main-content img {
-    width: 600px;
-    height: 500px;
+    
 }
 
 #projects {
@@ -112,10 +109,7 @@ body {
     margin-left: 50px;
     margin-bottom: 10px;
     max-width: 400px;
-}
 
-#projects a {
-    text-decoration: none;
 }
 
 #main-footer p {
@@ -132,16 +126,6 @@ body {
 
     #main-header {
         display: flex;
-    }
-
-    #main-content {
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-    }
-
-    #main-content img {
-        align-self: flex-end;
     }
 
     #main-nav {

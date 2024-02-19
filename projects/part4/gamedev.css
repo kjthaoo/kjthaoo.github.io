@@ -1,6 +1,6 @@
 /* Structure */
-#body {
-    margin: 0.1px;
+body {
+    margin: 0; /* this removes the white spaces around the website */
 }
 
 #main-header {
@@ -16,6 +16,18 @@
     width: 100%;
     height: 650px;
     
+}
+
+#projects {
+    background-color: white;
+    width: auto;
+    height: 750px;
+    padding: 1px;
+}
+
+#projects img {
+    padding-top: 50px;
+    margin-left: 50px;
 }
 
 #main-footer {
@@ -68,6 +80,11 @@ body {
     padding-top: 250px;
 }
 
+#main-content p {
+    font-size: 15px;
+    margin-left: 50px;
+}
+
 #main-nav {
     margin-bottom: 0px;
 }
@@ -80,18 +97,19 @@ body {
     color: darkgreen;
 }
 
-.process h3 {
-    font-size: 12px;
-    margin-left: 0px;
-    padding-top: 35px;
+#projects h3 {
+    font-size: 20px;
     color: black;
-    text-align: left;
+    margin-left: 50px;
 }
 
-.process p {
-    font-size: 10px;
+#projects p {
+    font-size: 15px;
     color: black;
-    text-align: center;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    max-width: 400px;
+
 }
 
 #main-footer p {
@@ -99,8 +117,6 @@ body {
     font-size: 15px;
     text-align: center;
 }
-
-
 
 /* Larger Resolutions */
 @media(min-width:600px) {
@@ -129,24 +145,27 @@ body {
         margin: 10px;
     }
 
-    #main-content {
-        display: flex; /* this makes the 'about me' go on the right side of the img src */
-        align-items: center;
-    }
-
-    .process {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
     .box1,
     .box2,
-    .box3,
-    .box4 {
+    .box3 {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+
+    #projects {
+        display: flex;
+        align-items: center; /* This centers it vertically */
+        justify-content: auto; /* This centers it horizontally */
+    }
+
+    #main-footer {
+        display: flex;
+        align-items: center; /* reminder that this aligns the <p> in the footer vertically */
+        justify-content: center; /* and this one is horizontally! */
     }
 }
 
