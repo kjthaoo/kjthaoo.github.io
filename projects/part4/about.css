@@ -1,20 +1,21 @@
 /* Structure */
-#body {
-    margin: 0.1px;
+body {
+    margin: 0;
+    overflow-x:hidden;
 }
 
 #main-header {
-    background-color: #84a59d;
+    background-color: white;
     padding: 1px;
     width: 100%;
     height: 100px;
 }
 
 #main-content {
-    background-color: #84a59d;
+    background-color: white;
     padding: 1px;
     width: 100%;
-    height: 650px;
+    height: 750px;
     
 }
 
@@ -42,35 +43,56 @@
 #main-nav li {
     list-style-type: none;
     padding: 5px;
-    background-color: #84a59d;
+    background-color: white;
 }
 
 #main-nav a {
     text-decoration: none;
-    color:white;
+    color:black;
 }
 
 /* Typography */
 body {
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
 }
 
 #main-header h3 {
-    font-size: 20px;
-    margin-left: 50px;
-    padding-top: 35px;
-    width: 200px;
+    font-size: 18px;
+    margin-left: 100px;
+    padding-top: 15px;
+    width: 50px;
+}
+
+#main-header a {
+    text-decoration: none;
+    color: black;
+}
+
+#main-header a:hover {
+    color: #84a59d;
 }
 
 #main-content h1 {
-    font-size: 65px;
-    margin-left: 50px;
-    padding-top: 250px;
+    font-size: 20px;
+    margin-left: 20px;
+    padding-top: 140px;
+    color: black;
+}
+
+#main-content p {
+    color: black;
+    margin-left: 20px;
+    font-size: 13px;
+    width: 650px;
+    padding-top: 40px;
+    margin-bottom: -5px; /* space between paragraphs */
+    line-height: 25px; /* within paragraph */
 }
 
 #main-nav {
     margin-bottom: 0px;
+    margin-right: 100px;
 }
 
 #main-nav a {
@@ -78,12 +100,21 @@ body {
 }
 
 #main-nav a:hover {
-    color: darkgreen;
+    color: #84a59d;
+}
+
+#main-footer h3 {
+    padding-top: 20px;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: -5px;
 }
 
 #main-footer p {
     color: black;
-    font-size: 15px;
+    font-size: 12px;
     text-align: center;
 }
 
@@ -121,7 +152,13 @@ body {
     }
 
     #main-content img {
-        margin-right: 20px;
+        margin-right: 150px;
+        margin-left: 200px;
+        padding-top: 150px;
+        padding-bottom: 150px; /* needed to add this because the circle was not fully a circle (but also due to the padding on the top that is causing that) */
+        width: 350px;
+        height: 450px;
+        border-radius: 50%;
     }
 
     .about {

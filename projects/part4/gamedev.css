@@ -1,17 +1,18 @@
 /* Structure */
 body {
     margin: 0; /* this removes the white spaces around the website */
+    overflow-x:hidden;
 }
 
 #main-header {
-    background-color: #84a59d;
+    background-color: white;
     padding: 1px;
     width: 100%;
     height: 100px;
 }
 
 #main-content {
-    background-color: #84a59d;
+    background-color: white;
     padding: 1px;
     width: 100%;
     height: 650px;
@@ -53,31 +54,41 @@ body {
 #main-nav li {
     list-style-type: none;
     padding: 5px;
-    background-color: #84a59d;
+    background-color: white;
 }
 
 #main-nav a {
     text-decoration: none;
-    color:white;
+    color:black;
 }
 
 /* Typography */
 body {
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
 }
 
 #main-header h3 {
-    font-size: 20px;
-    margin-left: 50px;
-    padding-top: 35px;
-    width: 200px;
+    font-size: 18px;
+    margin-left: 100px;
+    padding-top: 15px;
+    width: 50px;
+}
+
+#main-header a {
+    text-decoration: none;
+    color: black;
+}
+
+#main-header a:hover {
+    color: #84a59d;
 }
 
 #main-content h1 {
-    font-size: 65px;
-    margin-left: 50px;
-    padding-top: 250px;
+    font-size: 20px;
+    margin-left: 20px;
+    padding-top: 140px;
+    color: black;
 }
 
 #main-content p {
@@ -87,6 +98,7 @@ body {
 
 #main-nav {
     margin-bottom: 0px;
+    margin-right: 100px;
 }
 
 #main-nav a {
@@ -94,7 +106,7 @@ body {
 }
 
 #main-nav a:hover {
-    color: darkgreen;
+    color: #84a59d;
 }
 
 #projects h3 {
@@ -109,12 +121,20 @@ body {
     margin-left: 50px;
     margin-bottom: 10px;
     max-width: 400px;
+}
 
+#main-footer h3 {
+    padding-top: 20px;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: -5px;
 }
 
 #main-footer p {
     color: black;
-    font-size: 15px;
+    font-size: 12px;
     text-align: center;
 }
 
@@ -160,12 +180,6 @@ body {
         display: flex;
         align-items: center; /* This centers it vertically */
         justify-content: auto; /* This centers it horizontally */
-    }
-
-    #main-footer {
-        display: flex;
-        align-items: center; /* reminder that this aligns the <p> in the footer vertically */
-        justify-content: center; /* and this one is horizontally! */
     }
 }
 
