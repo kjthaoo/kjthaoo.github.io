@@ -2,20 +2,37 @@
 body {
     margin: 0px;
     overflow-x:hidden;
+    padding-top: 5px;
 }
 
 #main-header {
+    position: fixed;
     background-color: white;
     padding: 1px;
     width: 100%;
     height: 100px;
 }
 
+.progress-container {
+    position: fixed;
+    width: 100%;
+    height: 7px;
+    background: lightgrey;
+    z-index: 999;
+    top: 0;
+}
+
+.progress-bar {
+    height: 7px;
+    background: linear-gradient(30deg,#1ca2d3, #ff8400);
+    width: 0%;
+}
+
 #main-content {
     background-color: white;
     padding: 1px;
     width: 100%;
-    height: 650px;
+    height: 1200px;
     
 }
 
@@ -50,6 +67,12 @@ body {
     color:black;
 }
 
+iframe {
+    margin-left: 285px;
+    width: 1000px;
+    height: 1000px;
+}
+
 /* Typography */
 body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -61,6 +84,8 @@ body {
     margin-left: 100px;
     padding-top: 15px;
     width: 50px;
+    font-style: italic;
+    font-weight: bold;
 }
 
 #main-header a {
@@ -69,13 +94,14 @@ body {
 }
 
 #main-header a:hover {
-    color: #84a59d;
+    color: #1ca2d3;
 }
 
 #main-content h1 {
-    font-size: 65px;
-    margin-left: 50px;
-    padding-top: 250px;
+    font-size: 30px;
+    margin-left: 285px;
+    padding-top: 80px;
+    padding-bottom: 20px;
 }
 
 #main-nav {
@@ -88,7 +114,7 @@ body {
 }
 
 #main-nav a:hover {
-    color: #84a59d;
+    color: #1ca2d3;
 }
 
 #main-footer h3 {
@@ -114,6 +140,10 @@ body {
     }
 
     #main-header {
+        display: flex;
+    }
+
+    .progress-container {
         display: flex;
     }
 

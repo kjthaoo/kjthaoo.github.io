@@ -18,12 +18,15 @@
                 </ul>
             </nav>
         </header>
+        <div class="progress-container">
+            <div class="progress-bar" id="bar"></div>
+        </div>
         <main id="main-content">
             <div class="intro">
-                <h1>Hello, I'm Kelly!</h1>
-                <p>A full-time student, on a mission to turn my dream of becoming a developer into a thrilling journey, all while indulging in my love for exploring various forms of creative expression.</p>
+                <h1>Hello, I'm <span class="Kelly">Kelly!</span></h1>
+                <p>A full-time student, on a mission to turn my dream of becoming a <span class="developer">developer</span> into a thrilling journey, all while indulging in my love for exploring various forms of creative expression.</p>
             </div>
-            <div class="flex-column">
+            <div class="flex-column"> <!--reminder that I had to create the flex-columns for the shadowss-->
                 <div class="star3D">
                     <img src="images/3Dstar.png">
                 </div>
@@ -41,31 +44,41 @@
             </div>
         </main>
         <div id="projects">
-            <div class="box1">
-                <section class="gamedev">
-                    <img src="images/Inthepresent.gif">
-                    <h3><a href="gamedev.html">Game Development</a></h3>
-                    <p>Here is a walk-through of my first video game creation, detailing the game's conception, the underlying narrative, and initial sketches.</p>           
-                </section>
+            <div class="section1">
+                <div class="box1"> <!--reminder to add a link to this AND add "zoom hover" (look at w3schools)-->
+                    <section class="gamedev">
+                        <img src="images/Inthepresent.gif">
+                        <h3><a href="gamedev.html">Game Development</a></h3>
+                        <p>Here is a walk-through of my first video game creation, detailing the game's conception, the underlying narrative, and initial sketches.</p>           
+                    </section>
+                </div>
+                <hr class="solid">
             </div>
-            <div class="box2">
-                <section class="webdev">
-                    <img src="images/assignportal.jpg">
-                    <h3><a href="webdev.html">Web Development</a></h3>  
-                    <p>Embark on an quick journey through my web development evolution, beginning with the fundamentals of HTML to learning backend techniques.</p>                     
-                </section>
+            <div class="section2">
+                <div class="box2">
+                    <section class="webdev">
+                        <img src="images/assignportal.jpg">
+                        <h3><a href="webdev.html">Web Development</a></h3>  
+                        <p>Embark on an quick journey through my web development evolution, beginning with the fundamentals of HTML to learning backend techniques.</p>                     
+                    </section>
+                </div>
+                <hr class="solid">
             </div>
-            <div class="box3">
-                <section class="journey">
-                    <img src="images/visualjourney.jpg"> 
-                    <h3><a href="visualj.html">A Visual Journey</a></h3>  
-                    <p>Discover my artistic creations in this digital realm and browse my gallery of drawings, gifs, animations, and photography.</p>                   
-                </section>
-            </div>             
+           <div class="section3">
+                <div class="box3">
+                    <section class="journey">
+                        <img src="images/visualjourney.jpg"> 
+                        <h3><a href="visualj.html">A Visual Journey</a></h3>  
+                        <p>Discover my artistic creations in this digital realm and browse my gallery of drawings, gifs, animations, and photography.</p>                   
+                    </section>
+                </div>   
+                <hr class="solid">
+           </div>      
         </div>
         <footer id="main-footer">
             <h3>Feel Free To Reach Out!</h4>
             <p>kjthao220@gmail.com ✉️</p>
         </footer>
+        <script src="script.js"></script>     
     </body>
 </html>
