@@ -77,25 +77,39 @@ body {
     width: 800px;
 }
 
+/* projects! */
+
 #projects {
     background-color: white;
     width: auto;
-    height: 750px;
-    padding: 1px;
+    height: 1450px; /* reminder that this also effects the spacing between section2 and section 3 */
+    margin-left: 250px;
+    margin-right: 250px;
+    padding-top: 100px;
 }
 
 #projects img { /* reminder to combine this with the OTHER projects img section below (for organization) */
-    padding-top: 50px;
-    margin-left: 43px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 12%;
+    width: 400px;
+    height: 400px;
+}
+
+.card {
+    border: solid lightgray 1px;
+    border-radius: 12%;
 }
 
 hr { /* the dividers */
-    margin-top: 50px;
-    margin-left: 50px;
+    margin-top: 20px;
+    margin-left: 35px;
 }
 
 hr.solid {
-    border: solid grey 1px;
+    border: solid lightgrey 1px;
     width: 425px;
 }
 
@@ -191,15 +205,15 @@ body {
 #projects h3 {
     font-size: 20px;
     color: black;
-    margin-left: 50px;
-    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-bottom: 5px;
 }
 
 #projects p {
     font-size: 13px;
     color: black;
-    margin-left: 50px;
-    margin-right: 42px;
+    margin-left: 15px;
+    margin-right: 10px;
     margin-bottom: 10px;
     max-width: 450px;
     line-height: 20px;
@@ -214,10 +228,6 @@ body {
     color: #1ca2d3;
 }
 
-#projects img {
-    border-radius: 5%;
-    padding-top: 10px;
-}
 #main-footer h3 {
     padding-top: 20px;
     color: black;
@@ -277,34 +287,100 @@ body {
     
     .box1,
     .box2,
-    .box3 {
+    .box3,
+    .box4 {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         margin-right: 30px;
-        margin-left: 50px;
-        margin-bottom: 10px;
-        padding-top: 20px;
+        margin-left: 30px;
         padding-bottom: 10px;
-        border: solid grey 0.5px;
-        border-radius: 5%;
     }
 
     #projects {
         display: flex;
-        align-items: center; /* This centers it vertically */
-        justify-content: auto; /* This centers it horizontally */
+        flex-wrap: wrap;
+        /*margin: 0;
+        padding: 0; for 3 in a row*/
     }
- /*
-    #main-footer {
-        display: flex;
-        align-items: center; //reminder that this aligns the <p> in the footer vertically
-        justify-content: center; //and this one is horizontally!
-    } 
-*/
+
+    .section1,
+    .section2,
+    .section3,
+    .section4 {
+        width: 500px;
+        height: 650px;
+        padding-top:20px;
+     }
 }
 
 /* Smaller Resolutions */
 @media(max-width:599px) {
+    .flex-container {
+        display: flex;
+    }
+
+    #main-header {
+        display: flex;
+    }
+
+    .progress-container {
+        display: flex;
+    }
+
+    #main-content {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .img3D img {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #main-nav {
+        display: flex;
+        margin-left: auto; /* or put 900px */
+    }
+
+    #main-nav ul {
+        display: flex;
+        align-items: flex-end; 
+        margin: 5px;
+        margin-right: 50px;
+    }
+
+    #main-nav li {
+        flex: .5;
+        margin: 10px;
+    }
     
+    .box1,
+    .box2,
+    .box3,
+    .box4 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-right: 30px;
+        margin-left: 30px;
+        padding-bottom: 10px;
+    }
+
+    #projects {
+        display: flex;
+        flex-wrap: wrap;
+        /*margin: 0;
+        padding: 0; for 3 in a row*/
+    }
+
+    .section1,
+    .section2,
+    .section3,
+    .section4 {
+        width: 500px;
+        height: 650px;
+        padding-top:20px;
+     }
 }
