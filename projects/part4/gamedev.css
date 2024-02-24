@@ -32,20 +32,8 @@ body {
     background-color: white;
     padding: 1px;
     width: 100%;
-    height: 650px;
+    height: 3100px;
     
-}
-
-#intro {
-    background-color: white;
-    width: auto;
-    height: 750px;
-    padding: 1px;
-}
-
-#intro img {
-    padding-top: 50px;
-    margin-left: 50px;
 }
 
 #main-footer {
@@ -106,7 +94,7 @@ body {
 #main-content h1 {
     font-size: 25px;
     margin-left: 200px;
-    padding-top: 140px;
+    padding-top: 80px; /* orignal: 140px */
     color: black;
 }
 
@@ -120,12 +108,21 @@ body {
 #main-content h3 {
     font-size: 20px;
     margin-left: 200px;
-    padding-top: 50px;
+    padding-top: 40px;
 }
 
 #main-content p {
     font-size: 15px;
     margin-left: 200px;
+    margin-right: 200px;
+    line-height: 20px;
+}
+
+.intro,
+.background,
+.challenges,
+.feedback {
+    padding-bottom: 50px;
 }
 
 #main-nav {
@@ -139,30 +136,6 @@ body {
 
 #main-nav a:hover {
     color: #1ca2d3;
-}
-
-#intro p {
-    font-size: 15px;
-    color: black;
-    margin-left: 50px;
-    margin-bottom: 10px;
-    max-width: 400px;
-}
-
-.box1 {
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-.process h3 {
-    font-size: 20px;
-    margin-left: 200px;
-    padding-top: 50px;
-}
-
-.process p {
-    font-size: 15px;
-    margin-left: 200px;
 }
 
 #main-footer h3 {
@@ -180,15 +153,37 @@ body {
     text-align: center;
 }
 
-.box1 { /* backdrop frosted effect - credit: https://css-tricks.com/backdrop-filter-effect-with-css/ */
-    backdrop-filter: blur(10px);
-    color: white;
-}
-
 /* the parallax effect */
 .parallax1 {
-    background:url("images/Inthepresent.gif");
-    min-height: 400px;
+    background:url("images/gamedevscene.jpg");
+    min-height: 650px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax2{
+    background:url("images/gamedevscene2.jpg");
+    min-height: 500px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax3{
+    background:url("images/gamescene4.jpg");
+    min-height: 500px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax4{
+    background:url("images/gamedevscene3.jpg");
+    min-height: 500px;
 
     background-attachment: fixed;
     background-position: center;
@@ -225,20 +220,6 @@ body {
     #main-nav li {
         flex: .5;
         margin: 10px;
-    }
-
-    .box1,
-    .box2,
-    .box3 {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    #intro {
-        display: flex;
-        align-items: center; /* This centers it vertically */
-        justify-content: auto; /* This centers it horizontally */
     }
 }
 
