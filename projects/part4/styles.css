@@ -334,9 +334,11 @@ body {
         justify-content: space-between;
     }
 
-    .img3D img {
-        display: flex;
-        flex-direction: column;
+    .flex-column {
+        display:flex;
+        max-width: 100%;
+        margin: auto;
+        height: auto;
     }
 
     #main-nav {
@@ -360,27 +362,26 @@ body {
     .box2,
     .box3,
     .box4 {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-right: 30px;
-        margin-left: 30px;
+        flex-direction: column;
+        margin-right: 50px;
+        margin-left: 50px;
         padding-bottom: 10px;
-    }
-
-    #projects {
-        display: flex;
-        flex-wrap: wrap;
-        /*margin: 0;
-        padding: 0; for 3 in a row*/
     }
 
     .section1,
     .section2,
     .section3,
     .section4 {
-        width: 500px;
+        width: 540px;
         height: 650px;
-        padding-top:20px;
+        padding-top:5px;
+        margin-right: 50px;
+        margin-left: 50px;
      }
+     
+     #projects {
+        max-width: 100%;
+        margin: auto;
+        height: auto;
+    }
 }
