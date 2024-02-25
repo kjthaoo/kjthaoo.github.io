@@ -195,5 +195,65 @@ body {
 
 /* Smaller Resolutions */
 @media(max-width:599px) {
-    
+    .flex-container {
+        display: flex;
+    }
+
+    #main-header {
+        display: flex;
+    }
+
+    .progress-container {
+        display: flex;
+    }
+
+    #main-nav {
+        display: flex;
+        margin-left: auto; /* or put 900px */
+    }
+
+    #main-nav ul {
+        display: flex;
+        align-items: flex-end; 
+        margin: 5px;
+        margin-right: 50px;
+    }
+
+    #main-nav li {
+        flex: .5;
+        margin: 10px;
+    }
+
+    #main-content {
+        height: 1000px;
+
+    }
+
+    #main-content img {
+        margin-right: 150px;
+        margin-left: 90px;
+        padding-top: 110px;
+        padding-bottom: 50px; /* needed to add this because the circle was not fully a circle (but also due to the padding on the top that is causing that) */
+        width: 300px;
+        height: 400px;
+        border-radius: 50%;
+    }
+    .about {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100px;
+        height: 100px;
+    }
+    #main-content h1 {
+        padding-top: 0px;
+    }
+
+    #main-content p {
+        display:flex;
+        margin-left: 20px;
+        width: 460px;
+        padding-top: 1px;
+        margin-bottom: -5px; /* space between paragraphs */
+        line-height: 25px; /* within paragraph */
+    }
 }

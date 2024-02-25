@@ -300,7 +300,39 @@ body {
     }
 }
 
+
 /* Smaller Resolutions */
 @media(max-width:599px) {
+    .flex-container {
+        display: flex;
+    }
+
+    #main-header {
+        display: flex;
+    }
     
+    .progress-container {
+        display: flex;
+    }
+
+    #main-nav {
+        display: flex;
+        margin-left: auto; /* or put 900px */
+    }
+
+    #main-nav ul {
+        display: flex;
+        align-items: flex-end; 
+        margin: 5px;
+        margin-right: 50px;
+    }
+
+    #main-nav li {
+        flex: .5;
+        margin: 10px;
+    }
+
+    #photos {
+        flex-wrap: wrap;
+    }
 }
