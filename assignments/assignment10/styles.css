@@ -17,16 +17,35 @@ body{
     border: solid rgb(171, 122, 122) 1px;
 }
 
-#images {
+#part2 {
     font-size: 20px;
     width: 650px;
-    height: 800px;
+    height: 1900px;
     background-color: #d4ebc7;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
     border: solid rgb(171, 122, 122) 1px;
 }
+
+#images {
+    padding-top: 20px;
+}
+
+#images p {
+    font-size: 15px;
+    text-align: center;
+}
+
+#images img {
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 450px;
+    height: 300px;
+    border: solid rgb(171, 122, 122) 2px;
+}
+
+
 
 
 /* Typography*/
