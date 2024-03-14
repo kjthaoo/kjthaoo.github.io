@@ -84,3 +84,4 @@ const getLi = (data) => {
 }
 
 window.onload = () => showPlans();
+
