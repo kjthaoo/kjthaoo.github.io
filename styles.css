@@ -57,61 +57,25 @@ ul {
     list-style: none; /* remove bullet point */
 }
 
-#assignment1 {
-    background-color: #ccd5ae;
-   }
-
-#assignment2 {
-    background-color: #ccd5ae;
-   }
-
-#assignment3 {
-    background-color: #ccd5ae;
-   }
-
-#assignment5 {
-    background-color: #ccd5ae;
-   }
-
-#assignment7 {
-    background-color: #ccd5ae;
-   }
-
-#assignment8 {
-    background-color: #ccd5ae;
-   }
-
-#assignment9 {
-    background-color: #ccd5ae;
-   }
-
-#assignment10 {
-    background-color: #ccd5ae;
-   }
-
-#assignment11 {
-    background-color: #ccd5ae;
-   }
-
-#assignment12 {
-    background-color: #ccd5ae;
-   }
-
+#assignment1,
+#assignment2,
+#assignment3,
+#assignment5,
+#assignment7,
+#assignment8,
+#assignment9,
+#assignment10,
+#assignment11,
+#assignment12,
 #assignment13 {
     background-color: #ccd5ae;
    }
 
-#part1 {
-    background-color: #eae7c3;
-}
-
-#part2 {
-    background-color: #eae7c3;
-}
-#part3 {
-    background-color: #eae7c3;
-}
-#part4 {
+#part1,
+#part2,
+#part3,
+#part4,
+#part5 {
     background-color: #eae7c3;
 }
 
