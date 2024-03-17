@@ -82,7 +82,7 @@ body {
 #projects {
     background-color: white;
     width: auto;
-    height: 1450px; /* reminder that this also effects the spacing between section2 and section 3 */
+    height: 2700px; /* reminder that this also effects the spacing between section2 and section 3 */
     margin-left: 250px;
     margin-right: 250px;
     padding-top: 100px;
@@ -288,7 +288,11 @@ body {
     .box1,
     .box2,
     .box3,
-    .box4 {
+    .box4,
+    .box5,
+    .box6,
+    .box7,
+    .box8 {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -307,7 +311,11 @@ body {
     .section1,
     .section2,
     .section3,
-    .section4 {
+    .section4,
+    .section5,
+    .section6,
+    .section7,
+    .section8 {
         width: 500px;
         height: 650px;
         padding-top:20px;
@@ -361,7 +369,11 @@ body {
     .box1,
     .box2,
     .box3,
-    .box4 {
+    .box4,
+    .box5,
+    .box6,
+    .box7,
+    .box8 {
         flex-direction: column;
         margin-right: 50px;
         margin-left: 50px;
@@ -371,7 +383,11 @@ body {
     .section1,
     .section2,
     .section3,
-    .section4 {
+    .section4,
+    .section5,
+    .section6,
+    .section7,
+    .section8 {
         width: 540px;
         height: 650px;
         padding-top:5px;
@@ -385,3 +401,4 @@ body {
         height: auto;
     }
 }
+
