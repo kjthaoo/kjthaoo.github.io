@@ -98,6 +98,43 @@ body {
     margin-left: 65px;
 }
 
+.dataform {
+    background-color: aliceblue;
+}
+
+.dataform h2 {
+    font-size: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.dataform h3 {
+    font-size: 15px;
+    padding-top: 2px;
+    color: grey;
+    text-align: center;
+}
+
+.dataform p {
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: black;
+    text-align: center;
+}
+
+.end {
+    padding-bottom: 50px;
+}
+
+.collab {
+    background: linear-gradient(30deg,#1ca2d3, #ff8400);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight:bold;
+    font-style:italic;
+}
+
 #main-content p {
     font-size: 15px;
     margin-left: 70px;
@@ -114,6 +151,19 @@ body {
 
 #main-nav a:hover {
     color: #1ca2d3;
+}
+
+.iframemap {
+    padding-top: 53px;
+    margin: 40px;
+}
+
+#map {
+    display: block;
+    padding: 4px;
+    width: 550px;
+    height: 500px;
+    margin: 0 2%;
 }
 
 #main-footer a {
@@ -136,10 +186,10 @@ body {
 }
 
 /* contact form */
-#contact-form button{
+button{
     cursor: pointer;
     border: solid black .1px;
-    margin-left: 70px;
+    margin-left: 160px;
 }
 
 .container {
