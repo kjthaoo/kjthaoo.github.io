@@ -95,11 +95,12 @@ body {
     font-size: 30px;
     padding-top: 80px;
     padding-bottom: 20px;
+    margin-left: 65px;
 }
 
 #main-content p {
-    font-size: 18px;
-    margin-left: 105px;
+    font-size: 15px;
+    margin-left: 70px;
 }
 
 #main-nav {
@@ -138,7 +139,7 @@ body {
 #contact-form button{
     cursor: pointer;
     border: solid black .1px;
-    margin-left: 285px;
+    margin-left: 70px;
 }
 
 .container {
@@ -146,10 +147,30 @@ body {
     text-align: center;
 }
 
-.container p,
-.container form,
-.container input {
+.container p {
+    text-align: left;
+    font-size: 12px;
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.container label {
+    display: block;
+}
+
+.container form{
     text-align: center;
+}
+
+.container input {
+    text-align: left;
+    width: 100%;
+}
+
+textarea {
+    width: 400px;
+    height: 200px;
 }
 
 
@@ -171,6 +192,10 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .container {
+        text-align: center;
     }
 
     #main-nav {
@@ -209,6 +234,10 @@ body {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
+    }
+
+    .container {
+        text-align: center;
     }
 
     .flex-column {
