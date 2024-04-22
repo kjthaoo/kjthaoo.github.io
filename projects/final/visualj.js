@@ -11,14 +11,27 @@ document.addEventListener('DOMContentLoaded', function() {
   const commentList = document.getElementById('comment-list');
   const commentForm = document.getElementById('comment-form');
   const commentInput = document.getElementById('comment-input');
+  const showCommentsBtn = document.getElementById('show-comments-btn');
+  const commentSection = document.getElementById('comments');
 
-  // loadin the comments
+  // load comments
   loadComments();
 
-  // the event listener for comments input
-  commentForm.addEventListener('submit', function(event) {
-    event.preventDefault(); 
+  // show comments button event listener
+  showCommentsBtn.addEventListener('click', function() {
+    // toggle comment section visibility
+    if (commentSection.style.display === 'none') {
+      commentSection.style.display = 'block';
+      showCommentsBtn.textContent = 'Hide Comments';
+    } else {
+      commentSection.style.display = 'none';
+      showCommentsBtn.textContent = 'Show Comments';
+    }
+  });
 
+  // comment form submit event listener
+  commentForm.addEventListener('submit', function(event) {
+    event.preventDefault();
     const commentText = commentInput.value.trim();
     if (commentText !== '') {
       addComment(commentText);
@@ -26,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  // to add a new comment
+  // function to add a new comment
   function addComment(text) {
     const comment = document.createElement('li');
     comment.className = 'comment';
@@ -35,24 +48,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // save comment
     saveComment(text);
-  };
+  }
 
-  // to save comment
+  // function to save comment
   function saveComment(comment) {
     let comments = localStorage.getItem('comments');
     comments = comments ? JSON.parse(comments) : [];
     comments.push(comment);
     localStorage.setItem('comments', JSON.stringify(comments));
-  };
+  }
 
-  // to load comments
+  // function to load comments
   function loadComments() {
     let comments = localStorage.getItem('comments');
     comments = comments ? JSON.parse(comments) : [];
     comments.forEach(comment => addComment(comment));
-  };
+  }
 
-  // event for delete button
+  // event listener for delete button
   commentList.addEventListener('click', function(event) {
     if (event.target.classList.contains('delete-btn')) {
       const comment = event.target.parentNode;
@@ -61,11 +74,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  // to remove comment
+  // function to remove comment
   function removeComment(commentText) {
     let comments = localStorage.getItem('comments');
     comments = comments ? JSON.parse(comments) : [];
     comments = comments.filter(comment => comment !== commentText);
     localStorage.setItem('comments', JSON.stringify(comments));
-  };
+  }
 });
