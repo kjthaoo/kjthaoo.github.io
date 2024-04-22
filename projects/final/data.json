@@ -48,7 +48,7 @@
       {
         "_id": 6,
         "title": "Photography Project",
-        "img_name": "",
+        "img_name": "photoimage.png",
         "link": "photos.html",
         "description": "A small gallery of photos I took in my MART210 course with the use of the Canon T3i/T5i.",
         "technologies": ["Canon T3i", "Canon T5i", "Photoshop"],
