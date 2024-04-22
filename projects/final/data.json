@@ -30,8 +30,8 @@
       {
         "_id": 4,
         "title": "Animations Project",
-        "img_name": "comingsoon.jpg",
-        "link": "index.html",
+        "img_name": "animation.png",
+        "link": "animation.html",
         "description": "A short process on the animation project I created for my Media Arts minor.",
         "technologies": ["Procreate", "DaVinci Resolve", "Epidemic Sounds"],
         "project_duration": "3 months"
