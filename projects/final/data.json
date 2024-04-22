@@ -57,8 +57,8 @@
       {
         "_id": 7,
         "title": "Twitch Overlays",
-        "img_name": "comingsoon.jpg",
-        "link": "index.html",
+        "img_name": "snorlaxx.png",
+        "link": "twitch.html",
         "description": "The process of a personal side project on creating overlays for a streaming platform.",
         "technologies": ["Procreate", "Canva", "Photoshop"],
         "project_duration": "4 months"
