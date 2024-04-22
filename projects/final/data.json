@@ -39,8 +39,8 @@
       {
         "_id": 5,
         "title": "Motion Graphics Project",
-        "img_name": "comingsoon.jpg",
-        "link": "index.html",
+        "img_name": "gifimage.png",
+        "link": "gif.html",
         "description": "A project for my MART380 course - to create a GIF as a form of a new media.",
         "technologies": ["Procreate", "Paint", "Photoshop"],
         "project_duration": "1 months"
