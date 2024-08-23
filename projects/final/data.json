@@ -23,7 +23,7 @@
         "title": "A Visual Journey",
         "img_name": "visualjourney.jpg",
         "link": "visualj.html",
-        "description": "Discover my artistic creations in this digital realm and browse my gallery of drawings.",
+        "description": "Discover my artistic creations in this digital realm and browse my gallery.",
         "technologies": ["Procreate", "Clip Studio Paint", "JavaScript"],
         "project_duration": "2 months"
       },
@@ -38,15 +38,6 @@
       },
       {
         "_id": 5,
-        "title": "Twitch Overlays",
-        "img_name": "snorlaxx.png",
-        "link": "twitch.html",
-        "description": "The process of a personal side project on creating overlays for a streaming platform.",
-        "technologies": ["Procreate", "Canva", "Photoshop"],
-        "project_duration": "4 months"
-      },
-      {
-        "_id": 6,
         "title": "More Projects - Coming Soon!",
         "img_name": "comingsoon.jpg",
         "link": "index.html",
