@@ -8,7 +8,7 @@ const myFunction = () => {
 
 window.onscroll = myFunction;
 
-/*
+
 const getData = async () => {
   const url = "https://kjthaoo.github.io/projects/final/data.json";
 
@@ -70,4 +70,3 @@ const createProjectElement = (project) => {
 };
 
 window.onload = () => showData();
-*/

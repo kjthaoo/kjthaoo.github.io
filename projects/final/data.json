@@ -38,24 +38,6 @@
       },
       {
         "_id": 5,
-        "title": "Motion Graphics Project",
-        "img_name": "gifimage.png",
-        "link": "gif.html",
-        "description": "A project for my MART380 course - to create a GIF as a form of a new media.",
-        "technologies": ["Procreate", "Paint", "Photoshop"],
-        "project_duration": "1 months"
-      },
-      {
-        "_id": 6,
-        "title": "Photography Project",
-        "img_name": "photoimg.png",
-        "link": "photos.html",
-        "description": "A small gallery of photos I took in my MART210 course with the use of the Canon T3i/T5i.",
-        "technologies": ["Canon T3i", "Canon T5i", "Photoshop"],
-        "project_duration": "2 months"
-      },
-      {
-        "_id": 7,
         "title": "Twitch Overlays",
         "img_name": "snorlaxx.png",
         "link": "twitch.html",
@@ -64,7 +46,7 @@
         "project_duration": "4 months"
       },
       {
-        "_id": 8,
+        "_id": 6,
         "title": "More Projects - Coming Soon!",
         "img_name": "comingsoon.jpg",
         "link": "index.html",
