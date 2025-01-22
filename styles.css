@@ -1,5 +1,5 @@
 body{
-    background: #f6f8f1;
+    background: snow;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
@@ -7,15 +7,17 @@ body{
 /*structure*/
 
 #mainheader{
-    background: #4DA16D;
+    background: #005163;
     padding-top: 12px;
     padding-bottom: 12px;
+    color: snow;
 }
 
 #content{
     margin-left: 45px;
     margin-right: 45px;
     margin-top: 30px;
+    color:#01333e;
 }
 
 /*typography*/
@@ -34,14 +36,23 @@ h3{
 
 a{
     text-decoration: none;
-    color: #318762;
+    color:#005163;
+    /*color: #4DA16D;*/
+    font-weight: bold;
+    margin-left: 20px;
 }
 
 
 /*flex-large resolution*/
-@media(min-width:700px){
+@media(min-width: 700px){
     .flexcontainer{
         display: flex;
+        background: #f8f4c7;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 20px;
         flex-direction: row;
     }
 
@@ -50,9 +61,20 @@ a{
         justify-content: space-between;
     }
 
+    .assignmentboxes{
+        margin-left: 100px;
+        margin-right: 100px;
+        
+    }
+
 }
     
 
-
-
 /*flex-smaller resolution*/
+
+@media(max-width: 699px){
+    .flexcontainer{
+        flex-direction: column;
+    }
+
+}
