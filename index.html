@@ -3,17 +3,25 @@
     <head>
         <!--Kelly Thao, CSCE 242-001 (SPRING 2025)-->
         <title>Kelly's Main Page</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     
     <body>
-        <div>
-            <h1>CSCE242-001 - Kelly Thao's Assignments</h1>
+        <div id="mainheader">
+            <h1>CSCE242-001 - Main Portal</h1>
+            <h3>Kelly Thao</h3>
+        </div>
+        <div id="content">
             <p>A Web Applications course where students will use and learn HTML and CSS to design the front-end of a website. JavaScript for functionality to their website. As well as learning how to use node and server side JavaScript to store and retrieve data from a server.</p>
-
             <h2>Assignments</h2>
-            <ol>
-                <li><a href="csce242/assignments/assignment01/index.html">Assignment01</a></li>
-            </ol>
+            <section class="boxes">
+                <div class="flexcontainer" id="assignments">
+                    <ol>
+                        <li><a href="csce242/assignments/assignment01/index.html">Assignment 01</a></li>
+                        <li><a href="csce242/assignments/assignment02/index.html">Assignment 02</a></li>
+                    </ol>
+                </div>
+            </section>
         </div>
     </body>
 </html>
