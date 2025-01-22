@@ -52,12 +52,14 @@ a{
     .flexcontainer{
         display: flex;
         background: #f8f4c7;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        padding-left: 15px;
-        padding-right: 15px;
         margin: 20px;
         flex-direction: row;
+    }
+
+    .flexcontainer img{
+        object-fit: cover;
+        width: auto;
+        height: auto;
     }
 
     #mainheader{
