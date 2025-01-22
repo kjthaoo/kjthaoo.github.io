@@ -12,6 +12,12 @@ body{
     padding-bottom: 12px;
 }
 
+#content{
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-top: 30px;
+}
+
 /*typography*/
 
 h1{
@@ -19,29 +25,11 @@ h1{
     margin-left: 45px;
 }
 
-h2{
-    margin-left: 45px;
-    margin-right: 45px;
-    margin-top: 30px;
-}
-
 h3{
     right: 0;
     margin-top: 25px;
     margin-right: 45px;
     text-align: right;
-}
-
-p{
-    margin-left: 45px;
-    margin-right: 45px;
-    margin-top: 30px;
-}
-
-li{
-    margin-left: 45px;
-    margin-right: 45px;
-    color: #318762;
 }
 
 a{
