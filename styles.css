@@ -20,6 +20,10 @@ body{
     color:#01333e;
 }
 
+ul{
+    list-style: none;
+}
+
 /*typography*/
 
 h1{
