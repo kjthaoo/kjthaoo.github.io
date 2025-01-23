@@ -29,6 +29,11 @@ table{
     margin-top: 400px;
 }
 
+li{
+    display: inline;
+    text-decoration: none;
+}
+
 /*typography*/
 h1{
     text-align: center;
