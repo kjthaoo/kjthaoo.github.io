@@ -43,7 +43,6 @@ a{
     color:#005163;
     /*color: #4DA16D;*/
     font-weight: bold;
-    margin-left: 20px;
 }
 
 
@@ -54,12 +53,22 @@ a{
         background: #f8f4c7;
         margin: 20px;
         flex-direction: row;
+        width: 100%;
+        height: 250px;
+        border-style: solid;
+        border-color: #e5e0b5;
+    }
+
+    .flexcontainer a{
+        flex-grow: 1;
+        text-align: left;
+        margin-left: 50px;
+        margin-top: 50px;
+
     }
 
     .flexcontainer img{
-        object-fit: cover;
-        width: auto;
-        height: auto;
+        object-fit: contain;
     }
 
     #mainheader{
