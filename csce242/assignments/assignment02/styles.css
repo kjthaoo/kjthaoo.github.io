@@ -15,7 +15,7 @@ body{
 
 }
 
-div{
+.flexcontainers{
     margin: 20px;
     padding: 20px;
     width: 300px;
@@ -25,14 +25,31 @@ div{
 table{
     width: 1000px;
     height: 400px;
-    margin: 100px;
-    margin-top: 400px;
+    margin: 20px;
+    padding: 5px;
+    background-color: #e6e6e6;
+}
+
+td, th{
+    border-bottom: 1px solid black;
+    text-align: left;
+    padding: 15px;
+}
+
+tr:hover{
+    border-bottom: 5px solid black;
 }
 
 li{
     display: inline;
     text-decoration: none;
 }
+
+img{
+    margin: 10px;
+    padding: 10px;
+}
+
 
 /*typography*/
 h1{
@@ -48,12 +65,40 @@ h2{
     color: snow;
 }
 
+h3{
+    margin: 10px;
+    padding: 10px;
+    margin-top: 50px;
+    text-decoration: underline;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+    padding: 10px;
+    margin: 5px;
+}
+
+a:hover{
+    color: #993C3C;
+    
+}
+
+p{
+    width: auto;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+}
 
 /*larger screens*/
 @media(min-width: 700px){
     .content{
         display: flex;
         background: white;
+        margin: 10px;
+        padding: 10px;
        /* flex-direction: row;*/
     }
 
@@ -65,8 +110,20 @@ h2{
     .flexcontainers{
        /* flex-wrap: wrap;*/
         justify-content: center;
-    
     }
+
+    .tablediv{
+        display:flex;
+        margin-top: 400px;
+        width: 700px;
+        height: 400px;
+    }
+
+    ul{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
 }
 
 /*smaller screens*/
