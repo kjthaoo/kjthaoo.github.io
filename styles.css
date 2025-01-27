@@ -1,6 +1,6 @@
 body{
     background: snow;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Times New Roman', Times, serif;
     margin: 0;
 }
 
@@ -33,7 +33,7 @@ h1{
 
 h2{
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
 }
 
 h3{
@@ -48,11 +48,12 @@ a{
     color:#005163;
     /*color: #4DA16D;*/
     font-weight: bold;
+    margin: 10px;
 }
 
 p{
     margin: 10px;
-    margin-bottom:50px;
+    margin-bottom:30px;
 }
 
 .flexcontainer p{
@@ -99,7 +100,7 @@ p{
     .assignmentboxes ul{
         display: flex;
         flex-wrap: wrap;
-        margin: 20px;
+        margin: 15px;
         justify-content: space-between;
     }
 
