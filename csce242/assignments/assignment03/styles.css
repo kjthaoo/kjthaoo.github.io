@@ -99,7 +99,6 @@ body {
     margin: 30px;
 }
 
-
 #main-footer p {
     text-align: center;
     color: black;
@@ -111,8 +110,6 @@ body {
 .title4 h3{
     text-align: center;
 }
-
-
 
 /*bigger resolutions*/
 @media(min-width:601px) {
@@ -142,10 +139,23 @@ body {
         flex: 1;
     } 
 
+    .gridcontainer {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        grid-template-rows: repeat(2, 2fr);
+        margin: 0;
+        padding: 0;
+        place-content: center center;
+    }
 
-}
+    .gridcontainer div {
+        margin: 0;
+        padding: 0;
+    }
+
 
 /*smaller resolutions*/
 @media(min-width:600px){
 
+}
 }
