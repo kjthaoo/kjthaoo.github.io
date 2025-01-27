@@ -31,6 +31,11 @@ h1{
     margin-left: 45px;
 }
 
+h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
 h3{
     right: 0;
     margin-top: 25px;
@@ -45,6 +50,22 @@ a{
     font-weight: bold;
 }
 
+p{
+    margin: 10px;
+    margin-bottom:50px;
+}
+
+.flexcontainer p{
+    margin-bottom: 60px;
+    text-align: left;
+    margin-left: 27px;
+}
+
+.flexcontainer a{
+    text-align: center;
+    margin-top: 50px;
+}
+
 
 /*flex-large resolution*/
 @media(min-width: 700px){
@@ -52,23 +73,22 @@ a{
         display: flex;
         background: #f8f4c7;
         margin: 20px;
-        flex-direction: row;
-        width: 100%;
-        height: 250px;
+        /*width: 430px;
+        height: 350px;*/
         border-style: solid;
         border-color: #e5e0b5;
-    }
-
-    .flexcontainer a{
-        flex-grow: 1;
-        text-align: left;
-        margin-left: 50px;
-        margin-top: 50px;
-
+        text-align: center;
+        flex-direction:column;
+        align-items: center;
+        justify-content:space-between;        
     }
 
     .flexcontainer img{
         object-fit: contain;
+        width: 300px;
+        height: 180px;
+        margin: 15px;
+        flex:1;
     }
 
     #mainheader{
@@ -76,10 +96,15 @@ a{
         justify-content: space-between;
     }
 
-    .assignmentboxes{
-        margin-left: 100px;
-        margin-right: 100px;
-        
+    .assignmentboxes ul{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px;
+        justify-content: space-between;
+    }
+
+    .assignmentboxes ul li{
+        flex: 1 1 calc(33.33% - 20px);
     }
 
 }
