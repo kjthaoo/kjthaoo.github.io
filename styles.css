@@ -97,14 +97,16 @@ p{
         justify-content: space-between;
     }
 
-    .assignmentboxes ul{
+    .assignmentboxes ul,
+    .projectboxes ul{
         display: flex;
         flex-wrap: wrap;
         margin: 15px;
         justify-content: space-between;
     }
 
-    .assignmentboxes ul li{
+    .assignmentboxes ul li,
+    .projectboxes ul li{
         flex: 1 1 calc(33.33% - 20px);
     }
 
