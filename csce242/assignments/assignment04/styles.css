@@ -78,10 +78,35 @@ header{
     font-weight: bold;
 }
 
+.bottom-nav {
+    color: black;
+    background-color: lightgrey;
+    padding: 6px;
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+.bottom-nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+
 /*typography*/
-h1 {
+#content h1 {
     color:white;
     background-color: #73000A;
+    padding: 6px;
+    margin: 0;
+    font-size: 27px;
+}
+
+h1 {
+    color: black;
+    background-color: lightgrey;
     padding: 6px;
     margin: 0;
     font-size: 27px;
