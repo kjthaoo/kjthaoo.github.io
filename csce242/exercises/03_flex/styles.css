@@ -1,6 +1,14 @@
 /* Structure */
+:root {
+    /*css variables*/
+    /*a reference to helps with if you want to change the theme color of a website etc. The other variales will change without needing you to go in and changing things nickpicing*/
+    --main-background-color:#CDECEF;
+    --primary-color:#2B91AD;
+    --gallery-color:#FFB58A;
+}
+
 body {
-    background:#CDECEF;
+    background:var(--main-background-color);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -13,11 +21,15 @@ body {
 }
 
 header, footer {
-    background:#2B91AD;
-    padding:20px 0; /*can have 4 number, (top, bottom right left) etc.*/
+    background:var(--primary-color);
     color:white;
     position:relative;
+    padding:20px 0;
+}
 
+header {
+   /* position:fixed;
+    width:70%;*/
 }
 
 main {
@@ -25,109 +37,106 @@ main {
 }
 
 .idea {
-    padding: 5px;
+    padding:5px;
 }
 
-.idea:nth-child(even) { /*can use odd or even!*/
-    background:#CDECEF;
+.idea:nth-child( even ) {
+    background:var(--main-background-color);
 }
 
 .idea-img {
-    padding: 5px;
+    margin-top:20px;
+    padding:5px;
     text-align: center;
-    margin-top: 20px;
     position:relative;
 }
 
-.idea-img p{
-    padding: 5px;
-    background-color: #2B91AD;
-    color: white;
-    /*moved position:absolute and bottom:0; into the media query (start with mobile screen*/
+.idea-img p {
+    padding:5px;
+    background:var(--primary-color);
+    color:white;
 }
 
-.gallery{
-    background: #FFB58A;
+.gallery {
+    background:var(--gallery-color);
 }
 
 .links {
-    background: #CDECEF
+    background:#D3DDEA;
 }
 
-.tile .node{
-    text-align: center; 
-    padding: 5px;
+.tile, .node {
+    text-align:center;
+    padding:5px;
 }
 
-/*Animations*/
+/* Animations */
 #animation-fun {
-    background:#a2e6f9;
-    padding: 20px;
-    height: 200px;
+    background:#a0ccd8;
+    padding:20px;
+    height:200px;
     position:relative;
 }
 
-#ball{
+#ball {
     height: 30px;
-    width: 30px;
-    background-color: white;
-    border-radius: 50px;
-    animation-name: fun;
+    width:30px;
+    background:blue;
+    border-radius:50px;
+    animation-name: fun; /*this name "fun" must match the keyframes below!*/
+    position:relative;
     animation-duration: 4s;
     animation-iteration-count: infinite;
 }
 
-@keyframes fun{
-    0% {background-color: red;}
+@keyframes fun {
+    0% {background-color: red;
+        top:0;
+        left:0;
+    }
     20% {background-color: orange;}
     40% {background-color: yellow;}
-    60% {background-color:green;}
-    80% {background-color: blue;}
-    90% {background-color: indigo;}
-    100% {background-color: yellow;}
-}
+    60% {background-color:aqua;
+        left:100px;
+        top:200px;
+    }
+    70% {background-color: green;}
+    80% {background-color: indigo;}
+    100% {background-color: violet;
+        top:0px;
+        left:0;
+    }
+  }
 
-/*Playing with positioning*/
+/* Playing with positioning */
 #main-logo {
-    /*position:absolute; /*remidner to use thi for assignment 04 logo*/
     position:absolute;
-    left: 50px;
-    /*
-        positionabsolute is based on window
-            - we dont want it to take up space (use absolute)
-        positionrelative is "relative to the initial postion" - is based on initial position
-            initial position reserved in markup.
-            if you do position relative, it would be the same until you do the tops and bottoms, lefts and right
-    */
-
+    left:50px;
 }
 
 /* Navigation */
-
 #sub-nav {
     position:absolute;
-    top: 0;
-    right: 5px;
+    top:0;
+    right:5px;
 }
 
-#main-nav ul, #sub-nav ul{
+#main-nav ul, #sub-nav ul {
     padding-left:0;
 }
 
-#main-nav li, #sub-nav li{
+#main-nav li, #sub-nav li {
     list-style-type: none;  /* remove the bullets */
     text-align: center;
-    border-bottom: 1px solid white; /*not an underline but a border to make it look nicer*/
+    border-bottom:1px solid white;
 }
-
-/*note: we are refactoring our code for better organization etc.*/
 
 #main-nav li {
     background:#FFB58A;
 }
 
-#sub-nav li{
-    margin: 0 5px;
+#sub-nav li {
+    margin:0 5px;
 }
 
 #main-nav a, #sub-nav a {
@@ -155,7 +164,7 @@ footer p {
 
 /* Larger screens */
 @media only screen and (min-width: 768px) { 
-    .columns{
+    .columns {
         display:flex;
     }
 
@@ -163,13 +172,13 @@ footer p {
         flex:1;
     }
 
-    /*called pseudo selectors?*/
-    #main-nav li:not(:last-child){
-        border-right: 1px solid gray;
+    #main-nav li:not(:last-child) {
+        border-right: 1px solid white;
     }
 
     .gallery {
         flex-wrap:wrap;
+        justify-content: space-between;
     }
 
     .one {
@@ -177,28 +186,24 @@ footer p {
     }
 
     .two {
-        flex: 2;
+        flex:2;
     }
 
     .three {
-        flex: 3;
+        flex:3;
     }
 
     .tile {
-        flex-basis: 45%;
+        flex-basis:45%;
     }
 
     .node {
-        flex-basis: 30%;
+        flex-basis:30%;
     }
 
-    .idea-img p{
+    .idea-img p {
         position:absolute;
-        padding: 5px;
-        background-color: #2B91AD;
-        color: white;
-        bottom:0; /*should be at the top of that div - which is the top of the img*/
+        padding:5px;
+        bottom:0;
     }
-    
-    
 }
