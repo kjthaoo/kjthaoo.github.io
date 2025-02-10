@@ -1,0 +1,74 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background: rgb(255, 255, 255);
+}
+
+/* Structure */
+
+#content{
+    padding: 5px;
+    width: 80%;
+    margin: 5px;
+}
+
+#c1,
+#c2,
+#c3 {
+    background-color: azure;
+    width: 50%; /*centers the divs!!!*/
+    height: 600px;
+    margin: 20px;
+    padding: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+/* Color Picker */
+
+
+
+
+/* Typography*/
+
+h1{
+    color: rgb(20, 80, 51);
+}
+
+h2 {
+    color: rgb(196, 132, 38);
+}
+
+h3 {
+    color: black;
+}
+
+/* Larger Resolutions */
+@media(min-width:600px) {
+    .flex-container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+    }
+
+    .columns {
+        display: flex;
+        flex-direction: row;
+        margin: 15px;
+        padding: 5px;
+    }
+}
+
+
+/* Smaller Resolutions */
+@media(max-width:599px) {
+    .flex-container img{
+       display: block; 
+       margin: 0 auto;
+    }
+
+    .columns {
+        display: flex;
+        flex-direction: column;
+    }
+}

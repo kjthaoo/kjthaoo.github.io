@@ -37,4 +37,38 @@ document.getElementById("btn-color").onclick = () => {
     
 */
 
+//happy
+document.getElementById("btn-happy").onclick = () => {
+    const displayP = document.getElementById("display");
+    displayP.classList.remove("hidden"); 
+    displayP.classList.add("happy"); //displays the .happy
+    displayP.innerHTML = "Good Times";
 
+}
+
+document.getElementById("btn-sad").onclick = () => {
+    const displayP = document.getElementById("display");
+    displayP.classList.remove("hidden");
+    displayP.classList.add("sad");
+    displayP.innerHTML = "Sad Times";
+
+    document.getElementById("btn-clear").onclick = () => {
+        document.getElementById("display").classList.add("hidden");
+    }
+}
+
+//key down
+document.getElementById("txt-emotion").onkeyup = (event) => { // this line evokes the element
+    //console.log("WOW");
+    //const emotion = document.getElementById("txt-emotion").value;
+
+    //can do this:
+    //const emotion = event.curremtTarget.value; //event is the 'keydown' what you did
+    //console.log("emotion");
+
+    //or can do this:
+    document.getElementById("emotional-message").innerHTML =
+    "you are feeling " + event.currentTarget.value;
+
+
+}

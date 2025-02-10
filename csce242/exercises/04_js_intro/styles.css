@@ -72,6 +72,20 @@ main {
     color:purple;
 }
 
+.display{
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+}
+
+.happy {
+    color: green;
+}
+
+.hidden{
+    display:none;
+}
+
 /* Animations */
 #animation-fun {
     background:#a0ccd8;

@@ -1,0 +1,19 @@
+/*structure*/
+
+.display{
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+}
+
+.happy {
+    color: green;
+}
+
+.sad {
+    color: blue;
+}
+
+.hidden{
+    display:none;
+}
