@@ -57,6 +57,17 @@ h3 {
         margin: 15px;
         padding: 5px;
     }
+
+    #content {
+        text-align: center;
+        margin-left: 120px;
+    }
+
+    #body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 
