@@ -62,13 +62,37 @@ h3 {
 
 /* Smaller Resolutions */
 @media(max-width:599px) {
-    .flex-container img{
+    .flex-container {
        display: block; 
-       margin: 0 auto;
+       margin: 0;
+       width: 100%;
+       text-align: center;
+       padding: 0;
     }
 
     .columns {
         display: flex;
         flex-direction: column;
+        align-items: center;
+    }
+
+    #content {
+        text-align: center;
+    }
+
+    #originalImg {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #favcolor {
+        order: 1;
+        margin: 0 auto;
+        display: block;
+
+    }
+
+    #star {
+        order: 2;
     }
 }
