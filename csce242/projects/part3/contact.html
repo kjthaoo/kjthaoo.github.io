@@ -20,10 +20,24 @@
             <input type="text" id="search-bar" placeholder="Search..">
         </header>
         <main id="main-content">
-            <div id="main-top">
-                <img src="https://placehold.co/1500x400">
-                <button id="shop-btn">SHOP</button>
+            <div class="slideshow-container">
+                <div class="myslides">
+                    <div class="numbertext">1 / 2</div>
+                    <img src="https://placehold.co/1500x400">
+                </div>
+                <div class="myslides">
+                    <div class="numbertext">2 / 2</div>
+                    <img src="https://placehold.co/1500x400">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>  
             </div>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              </div>
+              
             <div class="flex-container">
                 <div id="card1">
                     <img src="https://placehold.co/320x400">
