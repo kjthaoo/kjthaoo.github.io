@@ -1,7 +1,7 @@
 /*structure*/
 .root {
     --main-background-color:white;
-    --primary-color: grey;
+    --primary-color: rgb(153, 153, 153);
     --secondary-color:rgb(97, 97, 97);
     --third-color: rgb(78, 78, 78);
     --logo-color: white;
@@ -38,22 +38,26 @@ body{
     margin: 20px;
     padding: 10px;
     margin-top: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /*navigation*/
 #main-nav {
     justify-content: center;
     align-items: center;
+    padding: 5px;
+    margin: 5px;
 }
 .nav-links {
-    padding-left: 0;
     font-size: 9px;
-    width: 40%;
+    width: auto;
     white-space: nowrap;
-}
-#main-nav li {
     list-style-type: none;
-    padding: 5px;
+    padding: 0;
+    margin: 0;
+}
+.nav-links li a {
+    text-decoration: none;
 }
 
 #main-nav a {
@@ -67,12 +71,17 @@ body{
     width: 100px;
     height: 30px;
     align-items: center;
-    margin: 0;   
+    margin: 0;  
+    margin-top: 100px; 
 }
 
-input {
+#search-bar {
     width: 180px;
-    height: 30px;
+    height: 15px;
+    margin-left: auto;
+    padding: 5px;
+    margin-top: 32px;
+    margin-right: 15px;
 }
 
 /*typgraphy*/
@@ -85,7 +94,30 @@ input {
     margin-left: 20px;
     padding: 5px;
 }
+#main-content h2 {
+    color: black;
+}
 
+/*footer*/
+#main-footer a {
+    text-decoration: none;
+    color: black;
+}
+
+#main-footer h3 {
+    padding-top: 20px;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: -5px;
+}
+
+#main-footer p {
+    color: black;
+    font-size: 12px;
+    text-align: center;
+}
 
 
 /*larger resolution*/
@@ -106,10 +138,10 @@ input {
     #main-nav {
         display: flex;
     }
-    #main-nav ul {
+    .nav-links {
         display: flex;
-        align-items: flex-end;
     }
+
 }
 
 
@@ -117,14 +149,14 @@ input {
 
 /*smaller resolution*/
 @media(max-width:599px) {
-    .flex-container {
+    .flex-container,
+    #main-header,
+    #main-top,
+    #main-nav,
+    .nav-links {
         width: 80%;
         margin: 10px;
         border: 1px solid black;
-    }
-
-    #main-content {
-
     }
 }
 
