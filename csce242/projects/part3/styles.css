@@ -33,8 +33,7 @@ body{
 
 /*cards*/
 #card1,
-#card2,
-#card3 {
+#card2 {
     margin: 20px;
     padding: 10px;
     margin-top: 100px;
@@ -42,6 +41,12 @@ body{
 }
 
 /*navigation*/
+#toggle-nav div {
+    width:20px;
+    height: 2px;
+    background-color:black;
+    margin: 4px 0;
+}
 #main-nav {
     justify-content: center;
     align-items: center;
@@ -97,6 +102,10 @@ body{
 #main-content h2 {
     color: black;
 }
+h2 {
+    text-align: center;
+    margin-top: 65px;
+}
 
 /*footer*/
 #main-footer a {
@@ -122,6 +131,9 @@ body{
 
 /*larger resolution*/
 @media(min-width:600px) {
+    #toggle-nav div {
+        display:none;
+    }
     .flex-container {
         display: flex;
         align-items: center;
@@ -144,9 +156,6 @@ body{
 
 }
 
-
-
-
 /*smaller resolution*/
 @media(max-width:599px) {
     .flex-container,
@@ -156,7 +165,17 @@ body{
     .nav-links {
         width: 80%;
         margin: 10px;
-        border: 1px solid black;
     }
-}
 
+    .hide-small {
+        display:flex;
+    }
+
+    img {
+        width:100%;
+        height: auto;
+    }
+
+   
+    
+}
