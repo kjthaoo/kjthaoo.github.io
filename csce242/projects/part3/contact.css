@@ -23,7 +23,7 @@ body{
 #main-content {
     background-color: var(--main-background-color);
     width: 100%;
-    height: 2000px; /*height of the website/content*/
+    height: 2300px; /*height of the website/content*/
 }
 
 #main-top {
@@ -33,14 +33,20 @@ body{
 
 /*cards*/
 #card1,
-#card2,
-#card3 {
+#card2 {
     margin: 20px;
     padding: 10px;
     margin-top: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /*navigation*/
+#toggle-nav div {
+    width:20px;
+    height: 2px;
+    background-color:black;
+    margin: 4px 0;
+}
 #main-nav {
     justify-content: center;
     align-items: center;
@@ -64,72 +70,14 @@ body{
     color:black;
 }
 
-/*slideshow & search bar*/
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-}
-.myslides {
-    display: none;
-}
+/*buttons & search bar*/
 
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-}
-
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-    background-color: #717171;
-}
-
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
+#shop-btn {
+    width: 100px;
+    height: 30px;
+    align-items: center;
+    margin: 0;  
+    margin-top: 100px; 
 }
 
 #search-bar {
@@ -151,8 +99,19 @@ body{
     margin-left: 20px;
     padding: 5px;
 }
+#main-nav a{
+    font-size: 12px;
+}
 #main-content h2 {
     color: black;
+}
+#main-content a {
+    text-decoration: none;
+    color: black;
+}
+h2 {
+    text-align: center;
+    margin-top: 65px;
 }
 
 /*footer*/
@@ -176,9 +135,36 @@ body{
     text-align: center;
 }
 
+/*back to the top icons and others*/
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(247, 247, 247);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: none;
+    font-size: 36px;
+    color: rgb(0, 0, 0);
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+#back-to-top:hover {
+    transform: scale(1.1); 
+    opacity: 0.8; 
+}
+
+#back-to-top:focus {
+    outline: none; 
+}
 
 /*larger resolution*/
 @media(min-width:600px) {
+    #toggle-nav div {
+        display:none;
+    }
     .flex-container {
         display: flex;
         align-items: center;
@@ -194,15 +180,48 @@ body{
     }
     #main-nav {
         display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 520px;
+        margin-right: 100px;
     }
+    #main-nav ul {
+        display: flex;
+        justify-content: center;
+    }
+    #main-nav li {
+        margin-inline-end: 40px;
+    }
+    #main-nav a {
+        text-align: center;
+    }
+
     .nav-links {
         display: flex;
     }
-
+    #search-bar-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-left: 200px;
+    }
+    #search-bar-wrapper {
+        flex: 1;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 32px;
+    }
+    .icon-container {
+        display: flex;
+        margin-top: 5px;
+    }
+    #back-to-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
 }
-
-
-
 
 /*smaller resolution*/
 @media(max-width:599px) {
@@ -213,7 +232,17 @@ body{
     .nav-links {
         width: 80%;
         margin: 10px;
-        border: 1px solid black;
     }
-}
 
+    .hide-small {
+        display:flex;
+    }
+
+    img {
+        width:100%;
+        height: auto;
+    }
+
+   
+    
+}

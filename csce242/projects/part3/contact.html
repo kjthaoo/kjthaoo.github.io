@@ -4,12 +4,18 @@
         <!--KJTHAO - project part 3-->
         <title>Part 3</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </header>
     <body>
         <header id="main-header">
             <h1><a href="index.html">GOLD PEBBLES</a></h1>
             <nav id="main-nav">
-                <ul class="nav-links">
+                <div id="toggle-nav">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul id="nav-items" class="nav-links hide-small">
                     <li><a href="shop.html">Shop</a></li>
                     <li><a href="aboutus.html">About Us</a></li>
                     <li><a href="customdesign.html">Custom Design</a></li>
@@ -17,41 +23,41 @@
                     <li><a href="faqs.html">FAQS</a></li>
                 </ul>
             </nav>
-            <input type="text" id="search-bar" placeholder="Search..">
+            <div id="search-bar-container">
+                <div id="search-bar-wrapper">
+                    <input type="text" id="search-bar" placeholder="Search..">
+                </div>
+                <div class="icon-container">
+                    <a href="#"><span class="material-icons">favorite</span></a>
+                    <a href="#"><span class="material-icons">account_circle</span></a>
+                    <a href="#"><span class="material-icons">shopping_cart</span></a>
+                </div>
+            </div>
         </header>
         <main id="main-content">
-            <div class="slideshow-container">
-                <div class="myslides">
-                    <div class="numbertext">1 / 2</div>
-                    <img src="https://placehold.co/1500x400">
-                </div>
-                <div class="myslides">
-                    <div class="numbertext">2 / 2</div>
-                    <img src="https://placehold.co/1500x400">
-                </div>
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>  
+            <div id="main-top">
+                <!--<img src="https://placehold.co/1500x400">-->
+                <img src="images/jewerly2.jpg">
+                <button id="shop-btn">SHOP</button>
             </div>
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-              </div>
-              
+            <h2>CURRENT INVENTORY</h2>
             <div class="flex-container">
                 <div id="card1">
-                    <img src="https://placehold.co/320x400">
+                    <img src="images/bracelet1.jpg">
+                    <h2><a href="collections.html">Collections</a></h2>
                 </div>
                 <div id="card2">
-                    <img src="https://placehold.co/320x400">
-                </div>
-                <div id="card3">
-                    <img src="https://placehold.co/320x400">
+                    <img src="images/3d1.jpg">
+                    <h2><a href="customdesign.html">Customized Designs</a></h2>
                 </div>
             </div>
         </main>
+        <footer id="main-footer">
+            <p>&copy; GOLD PEBBLES</p>
+        </footer>
+        <a href="#" id="back-to-top">
+            <span class="material-icons">keyboard_arrow_up</span>
+        </a>
+        <script src="script.js"></script>
     </body>
-    <footer id="main-footer">
-        <p>&copy; GOLD PEBBLES</p>
-    </footer>
 </html>
