@@ -35,20 +35,90 @@
             </div>
         </header>
         <main id="main-content">
-            <div id="main-top">
-                <!--<img src="https://placehold.co/1500x400">-->
-                <img src="images/jewerly2.jpg">
-                <button id="shop-btn">SHOP</button>
+            <hr class="divider">
+            <h2>SHOP</h2>
+            <div id="filters">
+                <h3>Filter by</h3>
+    
+                <!--material-->
+                <label for="material">Material:</label>
+                <select id="material">
+                    <option value="all">All</option>
+                    <option value="recycled-material">Recycled Material</option>
+                    <option value="recycled-metals">Recycled Metals</option>
+                    <option value="gold">Gold</option>
+                    <option value="silver">Silver</option>
+                    <option value="plastic">Plastic</option>
+                    <option value="resin">Resin</option>
+                </select>
+    
+                <!--category-->
+                <label for="category">Category:</label>
+                <select id="category">
+                    <option value="all">All</option>
+                    <option value="ring">Ring</option>
+                    <option value="bracelet">Bracelet</option>
+                    <option value="necklace">Necklace</option>
+                    <option value="earrings">Earrings</option>
+                </select>
+    
+                <!--price-->
+                <label for="price">Price:</label>
+                <select id="price">
+                    <option value="all">All</option>
+                    <option value="low-to-high">Lowest to Highest</option>
+                    <option value="high-to-low">Highest to Lowest</option>
+                </select>
             </div>
-            <h2>CURRENT INVENTORY</h2>
-            <div class="flex-container">
-                <div id="card1">
-                    <img src="images/bracelet1.jpg">
-                    <h2><a href="collections.html">Collections</a></h2>
+
+            <div class="item-grid">
+                <div class="item-card" data-material="gold" data-category="bracelet" data-price="50"> <!--these are for the filters!!-->
+                    <img src="images/bracelet1.jpg" alt="Bracelet 1">
+                    <h3>Gold Bracelet</h3>
+                    <p>$49.99</p>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
                 </div>
-                <div id="card2">
-                    <img src="images/3d1.jpg">
-                    <h2><a href="customdesign.html">Customized Designs</a></h2>
+                <div class="item-card" data-material="recycled-material" data-category="ring" data-price="100">
+                    <img src="images/3d1.jpg" alt="3D Jewelry">
+                    <h3>3D Jewelry</h3>
+                    <p>$105.99</p>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                </div>
+                <div class="item-card" data-material="gold" data-category="ring" data-price="60">
+                    <img src="images/ring2.jpg" alt="3">
+                    <h3>Gold Starlight</h3>
+                    <p>$59.99</p>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                </div>
+                <div class="item-card" data-material="plastic" data-category="earrings" data-price="80">
+                    <img src="images/3d1.jpg" alt="4">
+                    <h3>Powder Moon</h3>
+                    <p>$79.99</p>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                </div>
+                <div class="item-card" data-material="recycled-metals" data-category="ring" data-price="70">
+                    <img src="images/recycled1.jpg" alt="5">
+                    <h3>Recycled Metal Jasmine</h3>
+                    <p>$69.99</p>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                </div>
+                <div class="item-card" data-material="silver" data-category="earrings" data-price="190">
+                    <img src="images/ring3.jpg" alt="6">
+                    <h3>Silver Feathered</h3>
+                    <p>$189.99</p>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                </div>
+                <div class="item-card" data-material="gold" data-category="necklace" data-price="55">
+                    <img src="images/bracelet2.jpg" alt="7">
+                    <h3>Gold Twist</h3>
+                    <p>$54.99</p>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                </div>
+                <div class="item-card" data-material="resin" data-category="ring" data-price="40">
+                    <img src="images/3d1.jpg" alt="8">
+                    <h3>Resin Rose</h3>
+                    <p>$40.99</p>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
                 </div>
             </div>
         </main>
