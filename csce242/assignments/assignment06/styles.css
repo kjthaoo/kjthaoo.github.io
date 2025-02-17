@@ -1,0 +1,264 @@
+/* Structure */
+body{
+    background: #ffecf8;
+    margin: 0;
+}
+
+#content{
+    padding: 10px;
+    width: 95%;
+    margin: 5px;
+    margin: auto;
+    border-radius: 3px;
+}
+
+#content img { 
+    max-width: 70%;
+    max-height: 100%;
+}
+
+/* Typography*/
+
+h1{
+    color: #9b4343;
+    margin: 20px;
+    text-align: center;
+}
+
+h2{
+    color:#bb5656;
+    margin: 20px;
+    text-align: center;
+}
+
+h3 {
+    color:#9b4343;
+    margin: 20px;
+}
+
+h4 {
+    /* decreasing the space between them */
+    margin-top: 2px;
+    margin-bottom: 2px;
+    text-align: left;
+}
+
+p {
+    color: black;
+    margin: 20px;
+}
+
+p a {
+    color: black;
+    text-decoration: none;
+    font-style: none;
+}
+
+ul {
+    list-style: none; 
+}
+
+#box1 {
+    background-color: #d0ff8f;
+   }
+
+#box2 {
+    background-color: #d0ff8f;
+   }
+
+footer p {
+    text-align: center;
+}
+
+/* Navigation */
+#main-nav ul {
+    text-align: center;
+    font-size: 15px;
+    margin-left: 50px;
+}
+
+#main-nav li {
+    display: inline-block;
+    margin-inline-end: 40px;
+}
+
+#main-nav a{
+    text-decoration: none;
+    color: #a47474;
+    text-align: center;
+}
+
+#main-content div {
+    width: 400px;
+    height: 100px;
+}
+
+/* Larger Resolutions */
+@media(min-width:600px) {
+   .flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 650px;
+    width: 30%;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+   }
+
+   .heart-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    }
+
+    .heartshape {
+        width: 100px;
+        height: 100px;
+        background-color: #ccc;
+        transform: rotate(316deg);
+        position: relative;
+        display: inline-block;
+        margin: 40px;
+    }
+
+    .heartshape::before,
+    .heartshape::after {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-color: inherit;
+        border-radius: 50%;
+    }
+
+    .heartshape::before {
+        top: -50px;
+        left: 0;
+    }
+
+    .heartshape::after {
+        top: 0;
+        left: 50px;
+    }
+
+    .buttons {
+        display: flex;
+        gap: 10px;
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    button:hover {
+        background-color: #ddd;
+    }
+
+   .boxes {
+    display: flex;
+    flex-direction: row;
+   }
+
+   #box1,
+   #box2 {
+    border: 1px solid black;
+    width: 400px;
+    height: 700px;
+   }
+
+   .toggle-menu {
+    display: flex;
+    align-items: center;
+   }
+
+   #toggle-arrow {
+    display: none;
+    text-decoration: none;
+    cursor: pointer;
+   }
+
+   #exercises {
+    display: block;
+   }
+
+}
+
+/* Smaller Resolutions */
+@media(max-width:599px) {
+    .flex-container {
+        width: 80%;
+     }
+ 
+     .boxes {
+        display: flex;
+        flex-direction: column;
+     }
+     
+     .flex-container {
+        width: 80%;
+     }
+ 
+     #box1, 
+     #box2 {
+        background-color: #d0ff8f;
+        width: 400px;
+        height: 700px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center
+     }   
+
+     .toggle-menu {
+        display: flex;
+     }
+
+     #exercises {
+        display: none;
+     }
+
+     #exercises.active {
+        display: block;
+     }
+
+     .heart-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        }
+    
+        .heartshape {
+            width: 100px;
+            height: 100px;
+            background-color: #ccc;
+            transform: rotate(316deg);
+            position: relative;
+            display: inline-block;
+            margin: 40px;
+        }
+    
+        .heartshape::before,
+        .heartshape::after {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: inherit;
+            border-radius: 50%;
+        }
+    
+        .heartshape::before {
+            top: -50px;
+            left: 0;
+        }
+    
+        .heartshape::after {
+            top: 0;
+            left: 50px;
+        }
+ }
