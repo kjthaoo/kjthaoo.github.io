@@ -23,7 +23,7 @@ body{
 #main-content {
     background-color: var(--main-background-color);
     width: 100%;
-    height: 2000px; /*height of the website/content*/
+    height: 1800px; /*height of the website/content*/
 }
 
 #main-top {
@@ -99,6 +99,9 @@ body{
     margin-left: 20px;
     padding: 5px;
 }
+#main-nav a{
+    font-size: 12px;
+}
 #main-content h2 {
     color: black;
 }
@@ -128,6 +131,30 @@ h2 {
     text-align: center;
 }
 
+/*back to the top icons and others*/
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(247, 247, 247);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: none;
+    font-size: 36px;
+    color: rgb(0, 0, 0);
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+#back-to-top:hover {
+    transform: scale(1.1); 
+    opacity: 0.8; 
+}
+
+#back-to-top:focus {
+    outline: none; 
+}
 
 /*larger resolution*/
 @media(min-width:600px) {
@@ -149,11 +176,46 @@ h2 {
     }
     #main-nav {
         display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 370px;
+        margin-right: 200px;
     }
+    #main-nav ul {
+        display: flex;
+        justify-content: center;
+    }
+    #main-nav li {
+        margin-inline-end: 40px;
+    }
+    #main-nav a {
+        text-align: center;
+    }
+
     .nav-links {
         display: flex;
     }
-
+    #search-bar-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    #search-bar-wrapper {
+        flex: 1;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 32px;
+    }
+    .icon-container {
+        display: flex;
+        margin-top: 5px;
+    }
+    #back-to-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
 }
 
 /*smaller resolution*/
