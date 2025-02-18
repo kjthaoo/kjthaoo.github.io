@@ -156,6 +156,13 @@ h2 {
 #back-to-top:focus {
     outline: none; 
 }
+.divider {
+    border: none;
+    border-top: 1px solid #b0b0b0;
+    margin: 20px auto;
+    width: 95%;
+}
+
 
 /*larger resolution*/
 @media(min-width:600px) {
