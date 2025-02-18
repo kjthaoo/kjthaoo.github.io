@@ -3,7 +3,7 @@
     <header>
         <!--KJTHAO - project part 3-->
         <title>Part 3</title>
-        <link rel="stylesheet" href="faq.css">
+        <link rel="stylesheet" href="faqs.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </header>
     <body>
@@ -35,20 +35,35 @@
             </div>
         </header>
         <main id="main-content">
-            <div id="main-top">
-                <!--<img src="https://placehold.co/1500x400">-->
-                <img src="images/jewerly2.jpg">
-                <button id="shop-btn">SHOP</button>
-            </div>
-            <h2>CURRENT INVENTORY</h2>
+            <hr class="divider">
             <div class="flex-container">
-                <div id="card1">
-                    <img src="images/bracelet1.jpg">
-                    <h2><a href="collections.html">Collections</a></h2>
+                <div class="faq-container">
+                    <h2>How can we help you?</h2>
+                    <input type="text" class="search-bar" placeholder="Search...">
                 </div>
-                <div id="card2">
-                    <img src="images/3d1.jpg">
-                    <h2><a href="customdesign.html">Customized Designs</a></h2>
+                <h3>Frequently Asked Questions</h3>
+                    <hr class="dividershort">
+                <div class="tabs">
+                    <div class="tab-container">
+                        <!--the tabs side/questions-->
+                        <div class="faq-tabs">
+                            <button class="tab" onclick="showAnswer(0)">What is your service?</button>
+                            <button class="tab" onclick="showAnswer(1)">How can I contact support?</button>
+                            <button class="tab" onclick="showAnswer(2)">Where can I find pricing?</button>
+                        </div>
+        
+                        <!--the answer side-->
+                        <div class="faq-answers">
+                            <div class="answer" id="answer-0">
+                                <p>Our service provides a wide range of solutions to help you manage your needs. From support to resources, we’ve got you covered.</p>
+                            </div>
+                            <div class="answer" id="answer-1">
+                                <p>You can contact our support team through email at support@example.com or by calling our 24/7 support hotline.</p>
+                            </div>
+                            <div class="answer" id="answer-2">
+                                <p>You can view our pricing details on the "Pricing" page, accessible from the top navigation bar.</p>
+                            </div>
+                        </div>
                 </div>
             </div>
         </main>

@@ -12,3 +12,11 @@ document.getElementById('back-to-top').addEventListener('click', (e) => {
         behavior: 'smooth'
     });
 });
+
+//the answer show/hide
+const showAnswer = (index) => {
+    const allAnswers = document.querySelectorAll('.answer');
+    allAnswers.forEach(answer => answer.classList.remove('active'));
+    
+    document.getElementById(`answer-${index}`).classList.add('active');
+}
