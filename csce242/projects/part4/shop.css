@@ -127,7 +127,7 @@ body{
     margin-left: auto;
     padding: 5px;
     margin-top: 32px;
-    margin-right: 15px;
+    margin-right: 8px;
 }
 
 .divider {
@@ -144,7 +144,7 @@ body{
     text-decoration: none;
     font-style: none;
     color: var(--logo-color);
-    margin-left: 20px;
+    margin-left: 8px;
     padding: 5px;
 }
 #main-nav a{
@@ -230,7 +230,7 @@ h2 {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-left: 520px;
+        margin-left: 320px;
         margin-right: 100px;
     }
     #main-nav ul {
@@ -238,7 +238,7 @@ h2 {
         justify-content: center;
     }
     #main-nav li {
-        margin-inline-end: 40px;
+        margin-inline-end: 10px;
     }
     #main-nav a {
         text-align: center;
@@ -251,7 +251,7 @@ h2 {
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        margin-left: 200px;
+        margin-left: 60px;
     }
     #search-bar-wrapper {
         flex: 1;

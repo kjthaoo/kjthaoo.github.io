@@ -81,7 +81,7 @@ body{
     margin-left: auto;
     padding: 5px;
     margin-top: 32px;
-    margin-right: 15px;
+    margin-right: 8px;
 }
 
 /*typgraphy*/
@@ -91,7 +91,7 @@ body{
     text-decoration: none;
     font-style: none;
     color: var(--logo-color);
-    margin-left: 20px;
+    margin-left: 8px;
     padding: 5px;
 }
 #main-nav a{
@@ -186,7 +186,7 @@ h2 {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-left: 520px;
+        margin-left: 320px;
         margin-right: 100px;
     }
     #main-nav ul {
@@ -194,7 +194,7 @@ h2 {
         justify-content: center;
     }
     #main-nav li {
-        margin-inline-end: 40px;
+        margin-inline-end: 10px;
     }
     #main-nav a {
         text-align: center;
@@ -207,7 +207,7 @@ h2 {
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        margin-left: 200px;
+        margin-left: 60px;
     }
     #search-bar-wrapper {
         flex: 1;
@@ -229,7 +229,7 @@ h2 {
     #card2,
     #card3 {
         display: flex;
-        margin-left: 500px;
+        margin-left: 300px;
     }
    
     #card1 h2,
@@ -252,14 +252,13 @@ h2 {
     }
 
     .image-container {
-        margin-left: 200px;
+        margin-left: 90px;
     }
     .image-container img {
-        margin-left: 500px;
         margin: 20px;
         padding: 5px;
-        width: 700px;
-        height: 500px;
+        width: 600px;
+        height: 400px;
         margin-top: 50px;
         margin-bottom: 50px;
     }
