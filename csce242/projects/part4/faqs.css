@@ -391,6 +391,10 @@ h2 {
     }
     .answer {
         margin-bottom: 15px;
+        display: none;
+    }
+    .answer.active {
+        display: block;
     }
     .tab {
         padding: 15px;
