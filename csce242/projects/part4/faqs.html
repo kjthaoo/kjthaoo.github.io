@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <!--KJTHAO - project part 4-->
+        <title>Part 3</title>
+        <link rel="stylesheet" href="faqs.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </header>
+    <body>
+        <header id="main-header">
+            <h1><a href="index.html">GOLD PEBBLES</a></h1>
+            <nav id="main-nav">
+                <div id="toggle-nav">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul id="nav-items" class="nav-links hide-small">
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="customdesign.html">Custom Design</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faqs.html">FAQS</a></li>
+                </ul>
+            </nav>
+            <div id="search-bar-container">
+                <div id="search-bar-wrapper">
+                    <input type="text" id="search-bar" placeholder="Search..">
+                </div>
+                <div class="icon-container">
+                    <a href="#"><span class="material-icons">favorite</span></a>
+                    <a href="#"><span class="material-icons">account_circle</span></a>
+                    <a href="#"><span class="material-icons">shopping_cart</span></a>
+                </div>
+            </div>
+        </header>
+        <main id="main-content">
+            <hr class="divider">
+            <div class="flex-container">
+                <div class="faq-container">
+                    <h2>How can we help you?</h2>
+                    <input type="text" class="search-bar" placeholder="Search...">
+                </div>
+                <h3>Frequently Asked Questions</h3>
+                    <hr class="dividershort">
+                <div class="tabs">
+                    <div class="tab-container">
+                        <!--the tabs side/questions-->
+                        <div class="faq-tabs">
+                            <button class="tab" onclick="showAnswer(0)">What is your service?</button>
+                            <button class="tab" onclick="showAnswer(1)">How can I contact support?</button>
+                            <button class="tab" onclick="showAnswer(2)">Where can I find pricing?</button>
+                        </div>
+        
+                        <!--the answer side-->
+                        <div class="faq-answers">
+                            <div class="answer" id="answer-0">
+                                <p>Our service provides a wide range of solutions to help you manage your needs. From support to resources, we’ve got you covered.</p>
+                            </div>
+                            <div class="answer" id="answer-1">
+                                <p>You can contact our support team through email at support@example.com or by calling our 24/7 support hotline.</p>
+                            </div>
+                            <div class="answer" id="answer-2">
+                                <p>You can view our pricing details on the "Pricing" page, accessible from the top navigation bar.</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </main>
+        <footer id="main-footer">
+            <p>&copy; GOLD PEBBLES</p>
+        </footer>
+        <a href="#" id="back-to-top">
+            <span class="material-icons">keyboard_arrow_up</span>
+        </a>
+        <script src="faqs.js"></script>
+    </body>
+</html>
