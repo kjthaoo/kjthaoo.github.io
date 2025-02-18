@@ -23,7 +23,7 @@ body{
 #main-content {
     background-color: var(--main-background-color);
     width: 100%;
-    height: 2600px; /*height of the website/content*/
+    height: 2900px; /*height of the website/content*/
 }
 
 #main-top {
@@ -333,9 +333,36 @@ h2 {
         margin: 0 auto;
     }
 
-    #card1{
-        margin-left: 60px;
-        margin-right: auto;
+    #card1,
+    #card2,
+    #card3 {
+        width:auto;
+        height: auto;
+        margin-bottom: 100px;
+    }
+    #card1 h2,
+    #card2 h2,
+    #card3 h2{
+        margin: auto;
+        text-align: center;
+        margin-top: 25px;
+    }
+   .image-container {
+        margin-top: 100px;
+        margin-left: 20px;    
+   }
+    #card3 img{
+        margin-top: 100px;
+        margin-left: 20px;
+    }
+    #card1 p,
+    #card2 p,
+    #card3 p{
+        margin-top: 60px;
+        
+    }
+    #main-content h2 {
+        margin-right: 30px;
     }
   
 }
