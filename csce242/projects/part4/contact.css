@@ -145,12 +145,7 @@ h2 {
     font-size: 12px;
     text-align: center;
 }
-.contact-info {
-    list-style-type: none;
-    padding: 0;
-    margin-right: 200px;
-    margin-bottom: 350px;
-}
+
 .contact-info h2 {
     margin-right: 350px;
     margin-bottom: 20px;
@@ -258,6 +253,17 @@ h2 {
         font-size: 18px;
         margin-bottom: 10px;
     }
+    .contact-info {
+        list-style-type: none;
+        padding: 0;
+        margin-right: 200px;
+        margin-bottom: 350px;
+    }
+    .contact-map iframe {
+        max-width:800px;
+        height:550px;
+    }
+    
 }
 
 /*smaller resolution*/
@@ -323,6 +329,28 @@ h2 {
         width:100%;
         height: auto;
         margin: 0 auto;
+    }
+    .contact-map iframe{
+        width: 100%;
+        height:200px;
+    }
+    .contact-map {
+        margin-left: 60px;
+    }
+    .contact-info {
+        width: 450px;
+        height: 300px;
+        list-style-type: none;
+        margin-bottom: 30px;
+
+    }
+    .contact-info h2 {
+        width: 200px;
+        margin-left: 120px;
+    }
+    .contact-info ul{
+        list-style-type: none;
+        margin-right: 60px;
     }
   
 }
