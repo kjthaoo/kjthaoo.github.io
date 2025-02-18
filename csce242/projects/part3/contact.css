@@ -23,21 +23,41 @@ body{
 #main-content {
     background-color: var(--main-background-color);
     width: 100%;
-    height: 2300px; /*height of the website/content*/
+    height: 1400px; /*height of the website/content*/
 }
 
 #main-top {
     position: relative;
     align-items: center;
 }
-
-/*cards*/
-#card1,
-#card2 {
-    margin: 20px;
-    padding: 10px;
-    margin-top: 100px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Slideshow */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    height: 470px;
+    overflow: hidden;
+}
+.mySlides {
+    display: none;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translateY(-50%); /*repositions the image in the overflow hidden area*/
+}
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 /*navigation*/
@@ -71,15 +91,6 @@ body{
 }
 
 /*buttons & search bar*/
-
-#shop-btn {
-    width: 100px;
-    height: 30px;
-    align-items: center;
-    margin: 0;  
-    margin-top: 100px; 
-}
-
 #search-bar {
     width: 180px;
     height: 15px;
@@ -133,6 +144,26 @@ h2 {
     color: black;
     font-size: 12px;
     text-align: center;
+}
+.contact-info {
+    list-style-type: none;
+    padding: 0;
+    margin-right: 200px;
+    margin-bottom: 350px;
+}
+.contact-info h2 {
+    margin-right: 350px;
+    margin-bottom: 20px;
+}
+.contact-info li span {
+    margin-right: 10px;
+    font-size: 24px;
+    color: var(--secondary-color);
+}
+.contact-map {
+    margin-top: 100px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /*back to the top icons and others*/
@@ -221,6 +252,12 @@ h2 {
         align-items: center;
         text-decoration: none;
     }
+    .contact-info li {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
 }
 
 /*smaller resolution*/
@@ -277,7 +314,6 @@ h2 {
         margin-left: 50px;
     }
 
-
     .hide-small {
         display:flex;
     }
@@ -287,19 +323,6 @@ h2 {
         width:100%;
         height: auto;
         margin: 0 auto;
-    }
-   
-    #shop-btn {
-        display:flex;
-        justify-content: center;
-        margin-left: 180px;
-        margin-right: auto;
-    }
-
-    #card1,
-    #card2 {
-        margin-left: 60px;
-        margin-right: auto;
     }
   
 }

@@ -12,3 +12,21 @@ document.getElementById('back-to-top').addEventListener('click', (e) => {
         behavior: 'smooth'
     });
 });
+let slideIndex = 0;
+
+const showSlides = () => {
+    const slides = document.querySelectorAll(".mySlides");
+    slides.forEach((slide) => slide.style.display = "none"); // Hide all slides
+
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+
+    slides[slideIndex - 1].style.display = "block"; // Show the current slide
+    setTimeout(showSlides, 3000); // Change slide every 3 seconds
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+    showSlides(); // Initialize the slideshow when the page loads
+});
