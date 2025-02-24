@@ -9,6 +9,9 @@ const stickFigureRight = 'images/right.png';
 const drawStairs = () => {
     stairs.innerHTML = '';
 
+    stairs.style.borderLeft = '5px solid black';
+    stairs.style.borderRight = '5px solid black';
+
     for (let i = 0; i < 10; i++) {
         const stair = document.createElement('div');
         stair.classList.add('stair');
