@@ -9,7 +9,6 @@ const stickFigureRight = 'images/right.png';
 const drawStairs = () => {
     stairs.innerHTML = '';
 
-    //the stairs
     for (let i = 0; i < 10; i++) {
         const stair = document.createElement('div');
         stair.classList.add('stair');
@@ -22,27 +21,30 @@ const drawStairs = () => {
 
 let step = 0;
 let stickFigure;
+let climbInterval;
 
 const climbStairs = () => {
-    if (step < 10) {
-        if (!stickFigure) {
-            stickFigure = document.createElement('img');
-            stickFigure.src = stickFigureLeft;
-            stickFigure.style.position = 'absolute';
-            stickFigure.style.bottom = '0px';
-            imageContainer.appendChild(stickFigure);
-            stickFigure.style.left = '50%';
-            stickFigure.style.bottom = '0px';
-            stickFigure.style.transform = 'translateX(-50%)';
-            stairs.appendChild(stickFigure);
-        }
-
-        stickFigure.style.bottom = `${step * 30}px`;
-
-        stickFigure.src = step % 2 === 0 ? stickFigureLeft : stickFigureRight;
-
-        step++;
+    if (!stickFigure) {
+        stickFigure = document.createElement('img');
+        stickFigure.src = stickFigureLeft;
+        stickFigure.style.position = 'absolute';
+        stickFigure.style.bottom = '0px';
+        imageContainer.appendChild(stickFigure);
+        stickFigure.style.left = '50%';
+        stickFigure.style.bottom = '0px';
+        stickFigure.style.transform = 'translateX(-50%)';
+        stairs.appendChild(stickFigure);
     }
+
+    climbInterval = setInterval(() => {
+        if (step < 10) {
+            stickFigure.style.bottom = `${step * 30}px`;
+            stickFigure.src = step % 2 === 0 ? stickFigureLeft : stickFigureRight;
+            step++;
+        } else {
+            clearInterval(climbInterval);
+        }
+    }, 500);
 };
 
 drawBtn.addEventListener('click', () => {
@@ -52,4 +54,3 @@ drawBtn.addEventListener('click', () => {
 climbBtn.addEventListener('click', () => {
     climbStairs();
 });
-
