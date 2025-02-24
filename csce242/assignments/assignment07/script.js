@@ -52,5 +52,9 @@ drawBtn.addEventListener('click', () => {
 });
 
 climbBtn.addEventListener('click', () => {
+    if (step === 10) {
+        step = 0;
+        stickFigure.style.bottom = '0px';
+    }
     climbStairs();
 });
