@@ -48,3 +48,4 @@ drawBtn.addEventListener('click', () => {
 climbBtn.addEventListener('click', () => {
     climbStairs();
 });
+
