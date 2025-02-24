@@ -97,6 +97,11 @@ footer p {
     button:hover {
         background-color: #ddd;
     }
+    #imageContainer {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
 
   
 }

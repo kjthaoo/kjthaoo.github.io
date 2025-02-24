@@ -31,6 +31,10 @@ const climbStairs = () => {
             stickFigure.style.position = 'absolute';
             stickFigure.style.bottom = '0px';
             imageContainer.appendChild(stickFigure);
+            stickFigure.style.left = '50%';
+            stickFigure.style.bottom = '0px';
+            stickFigure.style.transform = 'translateX(-50%)';
+            stairs.appendChild(stickFigure);
         }
 
         stickFigure.style.bottom = `${step * 30}px`;
