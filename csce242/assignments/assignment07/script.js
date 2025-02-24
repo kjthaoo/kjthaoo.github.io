@@ -3,14 +3,13 @@ const climbBtn = document.getElementById('climb-btn');
 const stairs = document.getElementById('stairs');
 const imageContainer = document.getElementById('imageContainer');
 
-const stickFigureLeft = 'left.png';
-const stickFigureRight = 'right.png';
+const stickFigureLeft = 'images/left.png'; 
+const stickFigureRight = 'images/right.png';
 
-//the stairs drawn function
 const drawStairs = () => {
-    stairs.innerHTML = ''; 
+    stairs.innerHTML = '';
 
-    //first the for loop to draw the ladder!
+    //the stairs
     for (let i = 0; i < 10; i++) {
         const stair = document.createElement('div');
         stair.classList.add('stair');
@@ -18,36 +17,28 @@ const drawStairs = () => {
         stairs.appendChild(stair);
     }
 
-    //climb button after drawing the stairs
     climbBtn.style.display = 'block';
 };
 
-//climbing functi
+let step = 0;
+let stickFigure;
+
 const climbStairs = () => {
-    let step = 0;
-    let climbing = true;
-
-    const stickFigure = document.createElement('img');
-    stickFigure.src = stickFigureLeft;
-    imageContainer.appendChild(stickFigure);
-
-    //moving
-    const climbInterval = setInterval(() => {
-        if (step < 10 && climbing) {
-            stickFigure.style.bottom = `${step * 30}px`;
-
-            //left and right image swithc
-            stickFigure.src = step % 2 === 0 ? stickFigureLeft : stickFigureRight;
-
-            step++;
-
-            //then stops
-            if (step === 10) {
-                clearInterval(climbInterval);
-                climbing = false;
-            }
+    if (step < 10) {
+        if (!stickFigure) {
+            stickFigure = document.createElement('img');
+            stickFigure.src = stickFigureLeft;
+            stickFigure.style.position = 'absolute';
+            stickFigure.style.bottom = '0px';
+            imageContainer.appendChild(stickFigure);
         }
-    }, 500);
+
+        stickFigure.style.bottom = `${step * 30}px`;
+
+        stickFigure.src = step % 2 === 0 ? stickFigureLeft : stickFigureRight;
+
+        step++;
+    }
 };
 
 drawBtn.addEventListener('click', () => {
