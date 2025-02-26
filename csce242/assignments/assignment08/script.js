@@ -22,6 +22,16 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
+    const titleImageMap = {
+        "Happy Birthday": "images/birthday.jpg",
+        "Crazy Clown": "images/clown.jpg",
+        "It's Raining": "images/rain.jpg",
+        "Quiet Time": "images/read.jpg",
+        "Working Hard": "images/shovel.jpg",
+        "Work from Home": "images/work.jpg"
+    };
+
+
     closeButton.addEventListener("click", () => {
         popup.classList.add("hidden");
     });
