@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <!--KJTHAO - project part 4-->
+        <title>Part 3</title>
+        <link rel="stylesheet" href="shop.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </header>
+    <body>
+        <header id="main-header">
+            <h1><a href="index.html">GOLD PEBBLES</a></h1>
+            <nav id="main-nav">
+                <div id="toggle-nav">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul id="nav-items" class="nav-links hide-small">
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="customdesign.html">Custom Design</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faqs.html">FAQS</a></li>
+                </ul>
+            </nav>
+            <div id="search-bar-container">
+                <div id="search-bar-wrapper">
+                    <input type="text" id="search-bar" placeholder="Search..">
+                </div>
+                <div class="icon-container">
+                    <a href="#"><span class="material-icons">favorite</span></a>
+                    <a href="#"><span class="material-icons">account_circle</span></a>
+                    <a href="#"><span class="material-icons">shopping_cart</span></a>
+                </div>
+            </div>
+        </header>
+        <main id="main-content">
+            <hr class="divider">
+            <h2>SHOP</h2>
+            <div id="filters">
+                <h3>Filter by</h3>
+    
+                <!--material-->
+                <label for="material">Material:</label>
+                <select id="material">
+                    <option value="all">All</option>
+                    <option value="recycled-material">Recycled Material</option>
+                    <option value="recycled-metals">Recycled Metals</option>
+                    <option value="gold">Gold</option>
+                    <option value="silver">Silver</option>
+                    <option value="plastic">Plastic</option>
+                    <option value="resin">Resin</option>
+                </select>
+    
+                <!--category-->
+                <label for="category">Category:</label>
+                <select id="category">
+                    <option value="all">All</option>
+                    <option value="ring">Ring</option>
+                    <option value="bracelet">Bracelet</option>
+                    <option value="necklace">Necklace</option>
+                    <option value="earrings">Earrings</option>
+                </select>
+    
+                <!--price-->
+                <label for="price">Price:</label>
+                <select id="price">
+                    <option value="all">All</option>
+                    <option value="low-to-high">Lowest to Highest</option>
+                    <option value="high-to-low">Highest to Lowest</option>
+                </select>
+            </div>
+
+            <div class="item-grid">
+                <div class="item-card" data-material="gold" data-category="bracelet" data-price="50"> <!--these are for the filters!!-->
+                    <a href="product.html?product=Gold%20Bracelet">
+                        <img src="images/bracelet1.jpg" alt="Bracelet 1">
+                    </a>
+                    <h3>Gold Bracelet</h3>
+                    <p>$49.99</p>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                </div>
+                <div class="item-card" data-material="recycled-material" data-category="ring" data-price="100">
+                    <a href="product.html?product=Gold%20Bracelet">
+                        <img src="images/3d1.jpg" alt="3D Jewelry">
+                    </a>
+                    <h3>3D Jewelry</h3>
+                    <p>$105.99</p>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                </div>
+                <div class="item-card" data-material="gold" data-category="ring" data-price="60">
+                    <a href="product.html?product=Gold%20Bracelet">
+                        <img src="images/ring2.jpg" alt="3">
+                    </a>
+                    <h3>Gold Starlight</h3>
+                    <p>$59.99</p>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                </div>
+                <div class="item-card" data-material="plastic" data-category="earrings" data-price="80">
+                    <a href="product.html?product=Gold%20Bracelet">
+                        <img src="images/3d1.jpg" alt="4">
+                    </a>
+                    <h3>Powder Moon</h3>
+                    <p>$79.99</p>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                </div>
+                <div class="item-card" data-material="recycled-metals" data-category="ring" data-price="70">
+                    <a href="product.html?product=Gold%20Bracelet">
+                        <img src="images/recycled1.jpg" alt="5">
+                    </a>
+                    <h3>Recycled Metal Jasmine</h3>
+                    <p>$69.99</p>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                </div>
+                <div class="item-card" data-material="silver" data-category="earrings" data-price="190">
+                    <a href="product.html?product=Gold%20Bracelet">
+                        <img src="images/ring3.jpg" alt="6">
+                    </a>
+                    <h3>Silver Feathered</h3>
+                    <p>$189.99</p>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                </div>
+                <div class="item-card" data-material="gold" data-category="necklace" data-price="55">
+                    <a href="product.html?product=Gold%20Bracelet">
+                        <img src="images/bracelet2.jpg" alt="7">
+                    </a>
+                    <h3>Gold Twist</h3>
+                    <p>$54.99</p>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                </div>
+                <div class="item-card" data-material="resin" data-category="ring" data-price="40">
+                    <a href="product.html?product=Gold%20Bracelet">
+                        <img src="images/3d1.jpg" alt="8">
+                    </a>
+                    <h3>Resin Rose</h3>
+                    <p>$40.99</p>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+                </div>
+            </div>
+        </main>
+        <footer id="main-footer">
+            <p>&copy; GOLD PEBBLES</p>
+        </footer>
+        <a href="#" id="back-to-top">
+            <span class="material-icons">keyboard_arrow_up</span>
+        </a>
+        <script src="shop.js"></script>
+    </body>
+</html>
