@@ -1,4 +1,4 @@
-class Pizza {
+class Pizza { /*my array vvv*/
     constructor(name, image, price, size, crust, ingredients) {
         this.name = name;
         this.image = `images/${image}`;
@@ -6,6 +6,7 @@ class Pizza {
         this.size = size;
         this.crust = crust;
         this.ingredients = ingredients;
+        /*my 6 attributes ^^^*/
     }
 
     getSection = () => `
@@ -16,14 +17,14 @@ class Pizza {
     `;
 }
 
-const pizzas = [
+const pizzas = [ /*my 5 pizzas vvv*/
     new Pizza("Jalapeno Pizza", "jalapenos.jpg", 12.99, "Large", "Thin Crust", "Pepperoni, Mozzarella, Tomato Sauce"),
     new Pizza("Mushroom Pizza", "mushroom.jpg", 10.99, "Medium", "Neapolitan", "Tomatoes, Mozzarella, Basil, Olive Oil"),
     new Pizza("Olive Pizza", "olives.jpg", 13.99, "Large", "Stuffed Crust", "Chicken, BBQ Sauce, Red Onions, Cilantro"),
     new Pizza("Pepperoni Pizza", "pepperoni.jpg", 11.99, "Small", "Hand Tossed", "Bell Peppers, Olives, Mushrooms, Onions"),
     new Pizza("Meat Lovers", "sausage.jpg", 14.99, "Extra Large", "Pan Crust", "Pepperoni, Sausage, Ham, Bacon"),
 ];
-
+/*DOM*/
 const pizzaContainer = document.getElementById("pizza-container");
 pizzaContainer.innerHTML = pizzas.map(pizza => pizza.getSection()).join("");
 
