@@ -4,6 +4,7 @@
         <!--KJTHAO - Assignment 09 -->
         <title>Assignment 09</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     </head>
 
     <body>
@@ -14,21 +15,28 @@
         
         <main id="main-content">
             <div id="content"> 
-                <section class="boxes"> 
-                    <div class="flex-container">
-                        <div class="item1">
-                            <h3>Jalapenos Pizza</h3>
-                            <img src="images/jalapenos.jpg">
-                        </div>
-                        
-                    </div>
+                <section id="pizza-container" class="flex-container"> 
                 </section>
             </div>  
         </main>
-        
         <footer id="main-footer">
+            <p>Images from <a href="https://www.freepik.com" target="_blank" rel="noopener noreferrer">Freepik</a></p>
             <p>&copy; kjthao</p>
         </footer>
+           <!-- Modal Popup -->
+        <div id="pizza-modal" class="w3-modal">
+            <div class="w3-modal-content w3-animate-zoom">
+                <div class="w3-container">
+                    <span class="w3-button w3-display-topright" id="close-modal">&times;</span>
+                    <h2 id="modal-title"></h2>
+                    <p><strong>Price:</strong> <span id="modal-price"></span></p>
+                    <p><strong>Size:</strong> <span id="modal-size"></span></p>
+                    <p><strong>Crust:</strong> <span id="modal-crust"></span></p>
+                    <p><strong>Ingredients:</strong> <span id="modal-ingredients"></span></p>
+                </div>
+                <img id="modal-image" src="" alt="Pizza Image" class="modal-img">
+            </div>
+        </div>
         <script src="script.js"></script>     
     </body>
 </html>
