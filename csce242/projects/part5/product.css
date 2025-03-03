@@ -23,7 +23,10 @@ body{
 #product-content {
     background-color: var(--main-background-color);
     width: 100%;
-    height: 800px;
+    height: 999px;
+}
+#product-content p {
+    margin-left: 520px;
 }
 
 #main-top {
