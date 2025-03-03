@@ -23,7 +23,7 @@ body{
 #main-content {
     background-color: var(--main-background-color);
     width: 100%;
-    height: 1400px; /*height of the website/content*/
+    height: 1400px;
 }
 
 #main-top {
@@ -49,7 +49,7 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transform: translateY(-50%); /*repositions the image in the overflow hidden area*/
+    transform: translateY(-50%);
 }
 @keyframes fade {
     from {
@@ -342,20 +342,20 @@ h2 {
         height: 300px;
         list-style-type: none;
         margin-bottom: 30px;
-        text-align: center; /* Center the contact info */
-        margin-left: auto; /* Center the contact info */
-        margin-right: auto; /* Center the contact info */
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
     .contact-info h2 {
-        width: 100%; /* Adjust width to center */
-        margin-left: 0; /* Remove left margin */
+        width: 100%;
+        margin-left: 0;
     }
     .contact-info ul {
         list-style-type: none;
-        margin-right: 0; /* Remove right margin */
+        margin-right: 0;
     }
     .slideshow-container {
-        height: 270px; /* Reduce the height by 50px */
+        height: 270px;
     }
 }
 
@@ -376,7 +376,7 @@ h2 {
         display: none;
         flex-direction: column;
         width: 100%;
-        margin-left: 35px;
+        margin-left: 46px;
     }
     #toggle-nav{
         display:flex;
@@ -391,7 +391,7 @@ h2 {
         height: 4px;
         background-color: #000;
         margin: 5px 0;
-        margin-left: 80px;
+        margin-left: 100px;
 
     }
     #main-header {
@@ -448,19 +448,20 @@ h2 {
         margin-right: 60px;
     }
     .slideshow-container {
-        height: 270px; /* Reduce the height by 50px */
+        height: 270px;
     }
     .icon-container {
         display: flex;
         justify-content: center;
         width: 100%;
-        margin-left: 15px;
+        margin-left: 25px;
     }
     #search-bar {
         margin-top: 10px;
+        margin-left: 20px;
     }
     #main-header h1 {
-        margin-left: 55px; /* Add margin-left */
+        margin-left: 55px;
     }
   
 }

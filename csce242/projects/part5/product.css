@@ -23,7 +23,7 @@ body{
 #main-content {
     background-color: var(--main-background-color);
     width: 100%;
-    height: 2800px; /*height of the website/content*/
+    height: 2800px;
 }
 
 #main-top {
@@ -308,7 +308,7 @@ h2 {
         display: none;
         flex-direction: column;
         width: 100%;
-        margin-left: 60px;
+        margin-left: 63px;
     }
     #toggle-nav{
         display:flex;
@@ -319,7 +319,7 @@ h2 {
         
     }
     #toggle-nav div {
-        display: block; /* Ensure div lines are displayed */
+        display: block;
         width: 30px;
         height: 4px;
         background-color: #000;
@@ -331,11 +331,11 @@ h2 {
         margin-bottom: 100px;
     }
     #main-header h1 {
-        margin-left: 55px; /* Add margin-left */
+        margin-left: 55px;
     }
     #main-content {
         margin-top: 200px;
-        padding-top: 20px; /* Add padding-top */
+        padding-top: 20px;
     }
     #main-top img {
         margin-left: 40px;
@@ -355,7 +355,7 @@ h2 {
         margin-top: 10px;
     }
     #search-bar-wrapper {
-        margin-left: 0; /* Center the search bar */
+        margin-left: 0;
     }
     .icon-container {
         display: flex;
@@ -378,7 +378,7 @@ h2 {
         margin-top: 50px;
     }
     #product-content {
-        margin-top: 60px; /* Add margin-top */
-        padding-top: 60px; /* Add padding-top */
+        margin-top: 60px;
+        padding-top: 60px;
     }
 }
