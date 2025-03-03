@@ -192,6 +192,8 @@ h2 {
     #main-nav ul {
         display: flex;
         justify-content: center;
+        margin: 0 auto;
+        margin-left: 10px; /* Add this line */
     }
     #main-nav li {
         margin-inline-end: 10px;
@@ -284,6 +286,7 @@ h2 {
         display: none;
         flex-direction: column;
         width: 100%;
+        margin-left: 35px; /* Add this line */
     }
     #toggle-nav{
         display:flex;
@@ -363,6 +366,18 @@ h2 {
     }
     #main-content h2 {
         margin-right: 30px;
+    }
+    .icon-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-left: 15px; /* Add this line */
+    }
+    #search-bar {
+        margin-top: 10px;
+    }
+    #main-header h1 {
+        margin-left: 55px; /* Add margin-left */
     }
   
 }

@@ -236,6 +236,8 @@ h2 {
     #main-nav ul {
         display: flex;
         justify-content: center;
+        margin: 0 auto;
+        margin-left: 10px;
     }
     #main-nav li {
         margin-inline-end: 10px;
@@ -288,6 +290,7 @@ h2 {
         display: none;
         flex-direction: column;
         width: 100%;
+        margin-left: 35px;
     }
     #toggle-nav{
         display:flex;
@@ -336,5 +339,18 @@ h2 {
         height: auto;
         margin: 0 auto;
     }
-  
+    .icon-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-left: 15px;
+    }
+    
+    #search-bar {
+        margin-top: 10px;
+    }
+
+    #main-header h1 {
+        margin-left: 55px; /* Add margin-left */
+    }
 }
