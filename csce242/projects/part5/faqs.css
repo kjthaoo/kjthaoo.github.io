@@ -1,7 +1,7 @@
 /*structure*/
-.root {
+:root {
     --main-background-color:white;
-    --primary-color: rgb(153, 153, 153);
+    --primary-color: #a8804f;
     --secondary-color:rgb(97, 97, 97);
     --third-color: rgb(78, 78, 78);
     --logo-color: white;
@@ -39,7 +39,7 @@ img {
 }
 /*faq stuff*/
 .faq-container {
-    background-color: rgb(255, 228, 121);
+    background-color: #F5E1C6;
     width: 100%;
     max-width: 2500px;
     height: 200px;
