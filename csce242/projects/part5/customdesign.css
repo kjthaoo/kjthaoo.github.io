@@ -254,7 +254,7 @@ h2 {
     }
 
     .image-container {
-        margin-left: 90px;
+        margin-left: 120px;
     }
     .image-container img {
         margin: 20px;
@@ -265,8 +265,154 @@ h2 {
         margin-bottom: 50px;
     }
 }
+
+/*medium resolution*/
+@media(min-width:600px) and (max-width:899px) {
+    #main-content,
+    .flex-container,
+    .card-text, 
+    .image-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .image-container img {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+    .card-text {
+        margin-top: 20px;
+    }
+    .flex-container,
+    #main-header,
+    #main-top,
+    #main-nav,
+    .nav-links {
+        width: 80%;
+        margin: 10px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    #main-nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 46px;
+    }
+    #toggle-nav {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+    }
+    #toggle-nav div {
+        width: 30px;
+        height: 4px;
+        background-color: #000;
+        margin: 5px 0;
+        margin-left: 100px;
+    }
+    #main-header {
+        margin-bottom: 100px;
+    }
+    #main-content {
+        margin-top: 200px;
+        height: 3500px;
+    }
+    #main-top img {
+        margin-left: 40px;
+    }
+    #main-top {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #search-bar-wrapper {
+        margin-left: 50px;
+    }
+    .hide-small {
+        display: flex;
+    }
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    #card1,
+    #card2,
+    #card3 {
+        width: auto;
+        height: auto;
+        margin-bottom: 100px;
+    }
+    #card1 h2,
+    #card2 h2,
+    #card3 h2 {
+        margin: auto;
+        text-align: center;
+        margin-top: 25px;
+    }
+    .image-container {
+        margin-top: 100px;
+        margin-left: 5px;
+    }
+    #card3 img {
+        margin-top: 100px;
+        margin-left: 5px;
+    }
+    #card1 p,
+    #card2 p,
+    #card3 p {
+        margin-top: 60px;
+    }
+    #main-content h2 {
+        margin-right: 10px;
+    }
+    .icon-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-left: 25px;
+    }
+    #search-bar {
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    #main-header h1 {
+        margin-left: 55px;
+    }
+}
+
 /*smaller resolution*/
 @media(max-width:599px) {
+    #main-content,
+    .flex-container,
+    .card-text,
+    .image-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .image-container img {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+    .card-text {
+        margin-top: 20px;
+    }
     .flex-container,
     #main-header,
     #main-top,
@@ -309,6 +455,7 @@ h2 {
     }
     #main-content {
         margin-top: 200px;
+        height: 3500px;
     }
     #main-top img {
         margin-left: 40px;
@@ -352,11 +499,11 @@ h2 {
     }
    .image-container {
         margin-top: 100px;
-        margin-left: 20px;    
+        margin-left: 5px;    
    }
     #card3 img{
         margin-top: 100px;
-        margin-left: 20px;
+        margin-left: 5px;
     }
     #card1 p,
     #card2 p,
@@ -365,7 +512,7 @@ h2 {
         
     }
     #main-content h2 {
-        margin-right: 30px;
+        margin-right: 10px;
     }
     .icon-container {
         display: flex;
