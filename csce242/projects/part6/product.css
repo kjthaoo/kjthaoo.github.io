@@ -287,6 +287,11 @@ h2 {
     transform: scale(1.05);
 }
 
+/*products-section*/
+#products-section{
+    max-width: 100%;
+}
+
 /*larger resolution*/
 @media(min-width:600px) {
     #toggle-nav div {

@@ -23,6 +23,8 @@ const showProducts = async() => {
         const p = document.createElement("p");
         section.append(p);
         p.innerHTML = `Price: ${product.price}`
+        p.innerHTML = `Description: ${product.description}`
+        p.innerHTML = `Rating: ${product.rating}`
 
         const ul = document.createElement("ul");
         section.append(ul);

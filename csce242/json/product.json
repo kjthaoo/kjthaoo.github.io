@@ -1,5 +1,6 @@
 [
     {
+        "img": "images/bracelet1.jpg",
         "name": "Gold Bracelet",
         "price": "$49.99",
         "description": "This is a gold bracelet TEST",
@@ -13,6 +14,7 @@
         
     },
     {
+        "img": "images/3d1.jpg",
         "name": "3D Jewelry",
         "price": "$105.99",
         "description": "Carefully crafted 3D jewelry",
