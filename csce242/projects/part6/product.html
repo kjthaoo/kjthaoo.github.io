@@ -36,6 +36,9 @@
                 </div>
             </nav>
         </header>
+        <a href="shop.html" id="back-to-shop">
+            <span class="material-icons">keyboard_arrow_left</span>
+        </a>  
         <main id="product-content">
             <section id="products-section">
                 <img class="product-image" src="" alt="Product Image">
@@ -45,6 +48,28 @@
                     <p class="product-price"></p>
                     <button class="add-to-cart">Add to Cart</button>
                 </div>
+            </section>
+             <!-- review section! -->
+            <section class="reviews-section">
+                <h3>Customer Reviews</h3>
+                <div id="reviews-container"></div>
+            </section>
+
+            <!-- review forms -->
+            <section class="add-review-section">
+                <h3>Add a Review</h3>
+                <form id="review-form">
+                    <input type="text" id="review-user" placeholder="Your Name" required />
+                    <select id="review-rating">
+                        <option value="5">⭐️⭐️⭐️⭐️⭐️</option>
+                        <option value="4">⭐️⭐️⭐️⭐️</option>
+                        <option value="3">⭐️⭐️⭐️</option>
+                        <option value="2">⭐️⭐️</option>
+                        <option value="1">⭐️</option>
+                    </select>
+                    <textarea id="review-comment" placeholder="Your review..." required></textarea>
+                    <button type="submit">Submit Review</button>
+                </form>
             </section>
         </main>         
         <footer id="main-footer">
@@ -73,8 +98,8 @@
                 </div>
             </div>
             <p class="footer-bottom">&copy; Gold Pebbles | 2025</p>
-        </footer>        
-        <a href="#" class="back-to-top">
+        </footer>              
+        <a href="#" id="back-to-top">
             <span class="material-icons">keyboard_arrow_up</span>
         </a>
         <script src="product.js"></script>
