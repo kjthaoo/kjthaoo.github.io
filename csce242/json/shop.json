@@ -71,6 +71,54 @@
         "category": "earrings",
         "material": "recycled-material",
         "img_name": "images/ecoluxe.jpg"
+      },
+      {
+        "_id": 10,
+        "name": "Ceramic Whisper",
+        "price": 20.99,
+        "category": "earrings",
+        "material": "ceramic",
+        "img_name": "images/ceramic.jpg"
+      },
+      {
+        "_id": 11,
+        "name": "Timeless Green",
+        "price": 60.00,
+        "category": "earrings",
+        "material": "clay",
+        "img_name": "images/clay.jpg"
+      },
+      {
+        "_id": 12,
+        "name": "Starlit Shards",
+        "price": 15.99,
+        "category": "earrings",
+        "material": "glass",
+        "img_name": "images/glassbead.jpg"
+      },
+      {
+        "_id": 13,
+        "name": "Gossamer Garden",
+        "price": 45.99,
+        "category": "earrings",
+        "material": "glass",
+        "img_name": "images/glassgarden.jpg"
+      },
+      {
+        "_id": 14,
+        "name": "Ethereal Links",
+        "price": 66.00,
+        "category": "bracelet",
+        "material": "gold",
+        "img_name": "images/linkluxe.jpg"
+      },
+      {
+        "_id": 15,
+        "name": "Moonlit Pearls",
+        "price": 120.00,
+        "category": "earrings",
+        "material": "pearl",
+        "img_name": "images/moonlitpearls.jpg"
       }
     ]
   }

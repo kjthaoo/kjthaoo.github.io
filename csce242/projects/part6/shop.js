@@ -1,45 +1,50 @@
-const getProducts = async() => {
+const getProducts = async () => {
     const url = "https://kjthaoo.github.io/csce242/json/shop.json";
 
     try {
         const response = await fetch(url);
-        return response.json();
-    } catch(error){
-        console.log(error);
+        const data = await response.json();
+        //return response.json();
+        console.log("Fetched data:", data);  // Log the data
+        return data;
+    } catch (error) {
+        console.log("Error fetching products:", error);
+
     }
 };
 
-const showProducts = async() => {
+const showProducts = async () => {
     const products = await getProducts();
-    const productsSection = document.getElementById("products-section");
     
-    products.forEach((product)=>{
-        const section = document.createElement("section");
-        productsSection.append(section);
-        const h3 = document.createElement("h3");
-        h3.innerHTML = product.name;
-        section.append(h3);
+    // Check if products.items is an array before proceeding
+    if (Array.isArray(products.items)) {
+        const productsSection = document.getElementById("products-section");
 
-        const p = document.createElement("p");
-        section.append(p);
-        p.innerHTML = `Price: ${product.price}`
-        p.innerHTML = `Description: ${product.description}`
-        p.innerHTML = `Rating: ${product.rating}`
+        products.items.forEach((product) => {
+            const section = document.createElement("section");
+            productsSection.append(section);
 
-        const ul = document.createElement("ul");
-        section.append(ul);
+            const h3 = document.createElement("h3");
+            h3.innerHTML = product.name;
+            section.append(h3);
 
-        //loop through each review
-        product.reviews.forEach((review)=>{
-            const li = document.createElement("li");
-            li.append(review);
-            ul.append(li);
+            const p = document.createElement("p");
+            p.innerHTML = `
+                <strong>Price:</strong> $${product.price}<br>
+                <strong>Material:</strong> ${product.material}<br>
+                <strong>Category:</strong> ${product.category}
+            `;
+            section.append(p);
         });
-
-    });
+    } else {
+        console.error("Products.items is not an array", products);
+    }
 };
 
+
+
 showProducts();
+
 //toggling the nav
 const toggleNav = document.getElementById('toggle-nav');
 const navItems = document.getElementById('nav-items');
