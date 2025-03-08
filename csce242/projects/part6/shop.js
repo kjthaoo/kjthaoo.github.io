@@ -17,14 +17,20 @@ const showProducts = async () => {
     if (Array.isArray(products.items)) {
         const productsSection = document.getElementById("products-section");
 
-        // Clear previous products if any
+        // this clear previous products
         productsSection.innerHTML = '';
 
         products.items.forEach((product) => {
             const section = document.createElement("section");
             section.classList.add("item-card");
 
-            // Assigning the data attributes to the product cards
+            // clikk on each item-card to take to product.html
+            section.addEventListener("click", () => {
+                window.location.href = `product.html?product=${encodeURIComponent(product.name)}`;
+            });
+
+
+            // item attributes for filterign!
             section.setAttribute('data-material', product.material);
             section.setAttribute('data-category', product.category);
             section.setAttribute('data-price', product.price);
@@ -56,7 +62,7 @@ const showProducts = async () => {
 
 showProducts();
 
-// Toggling the nav
+// toggling the nav
 const toggleNav = document.getElementById('toggle-nav');
 const navItems = document.getElementById('nav-items');
 
@@ -68,7 +74,7 @@ toggleNav.addEventListener('click', () => {
     }
 });
 
-// Go back to the top function
+// go back to the top function
 document.getElementById('back-to-top').addEventListener('click', (e) => {
     e.preventDefault(); 
 
@@ -78,7 +84,7 @@ document.getElementById('back-to-top').addEventListener('click', (e) => {
     });
 });
 
-// The filters
+// the filters
 const materialFilter = document.getElementById('material');
 const categoryFilter = document.getElementById('category');
 const priceFilter = document.getElementById('price');

@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         "Silver Feathered": {
             img: "images/ring3.jpg",
-            price: "$189.99",
+            price: "$89.99",
             description: "This is a gold bracelet."
 
         },
