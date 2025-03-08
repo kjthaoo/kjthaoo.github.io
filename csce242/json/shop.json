@@ -43,7 +43,7 @@
       {
         "_id": 6,
         "name": "Silver Feathered",
-        "price": 189.99,
+        "price": 89.99,
         "category": "earrings",
         "material": "silver",
         "img_name": "images/ring3.jpg"
@@ -60,7 +60,7 @@
         "_id": 8,
         "name": "Iridescent Bloom",
         "price": 40.99,
-        "category": "ring",
+        "category": "earrings",
         "material": "resin",
         "img_name": "images/repurposedradiance.jpg"
       },
