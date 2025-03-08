@@ -608,4 +608,23 @@ h2 {
         width: 100%;
         padding: 12px;
     }
+    #back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: rgb(247, 247, 247);
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        border: none;
+        font-size: 36px;
+        color: rgb(0, 0, 0);
+        padding: 0;
+        cursor: pointer;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    #back-to-top .material-icons { /*remidner that this is for adjusting the arrow*/
+        position: relative;
+        left: 8px;
+    }
 }
