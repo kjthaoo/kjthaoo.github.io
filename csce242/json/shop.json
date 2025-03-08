@@ -1,0 +1,77 @@
+{
+    "items": [
+      {
+        "_id": 1,
+        "name": "Gold Bracelet",
+        "price": 49.99,
+        "category": "bracelet",
+        "material": "gold",
+        "img_name": "images/bracelet1.jpg"
+      },
+      {
+        "_id": 2,
+        "name": "3D Jewelry",
+        "price": 105.99,
+        "category": "ring",
+        "material": "recycled-material",
+        "img_name": "images/3d1.jpg"
+      },
+      {
+        "_id": 3,
+        "name": "Gold Starlight",
+        "price": 59.99,
+        "category": "ring",
+        "material": "gold",
+        "img_name": "images/ring2.jpg"
+      },
+      {
+        "_id": 4,
+        "name": "Powder Moon",
+        "price": 79.99,
+        "category": "ring",
+        "material": "gold",
+        "img_name": "images/secondchance.jpg"
+      },
+      {
+        "_id": 5,
+        "name": "Recycled Metal Jasmine",
+        "price": 69.99,
+        "category": "ring",
+        "material": "recycled-metals",
+        "img_name": "images/recycled1.jpg"
+      },
+      {
+        "_id": 6,
+        "name": "Silver Feathered",
+        "price": 189.99,
+        "category": "earrings",
+        "material": "silver",
+        "img_name": "images/ring3.jpg"
+      },
+      {
+        "_id": 7,
+        "name": "Gold Twist",
+        "price": 54.99,
+        "category": "necklace",
+        "material": "gold",
+        "img_name": "images/bracelet2.jpg"
+      },
+      {
+        "_id": 8,
+        "name": "Iridescent Bloom",
+        "price": 40.99,
+        "category": "ring",
+        "material": "resin",
+        "img_name": "images/repurposedradiance.jpg"
+      },
+      {
+        "_id": 9,
+        "name": "TerraLace",
+        "price": 30.99,
+        "category": "earrings",
+        "material": "recycled-material",
+        "img_name": "images/ecoluxe.jpg"
+      }
+    ]
+  }
+  
