@@ -305,6 +305,9 @@ h2 {
     }
     #main-header {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
     }
     #main-top {
         display: flex;
@@ -495,9 +498,9 @@ h2 {
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
-        margin-left: 525px;
+        margin-left: 490px;
         margin-bottom: 30px;
-        width: 25%;
+        width: 150px;
         height: 40px;
         cursor: pointer;
         border-radius: 5px;
@@ -507,5 +510,15 @@ h2 {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    h2 {
+        text-align: left;
+        margin-left: 200px;
+        width: 150px;
+    }
+    p {
+        text-align: left;
+        margin-left: 200px;
+        width: 400px;
     }
 }
