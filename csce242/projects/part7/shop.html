@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <!--KJTHAO - project part 6-->
+        <title>Part 6</title>
+        <link rel="stylesheet" href="shop.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </header>
+    <body>
+        <header id="main-header">
+            <h1><a href="index.html">GOLD PEBBLES</a></h1>
+            <nav id="main-nav">
+                <div id="toggle-nav">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul id="nav-items" class="nav-links hide-small">
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="customdesign.html">Custom Design</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faqs.html">FAQS</a></li>
+                </ul>
+            </nav>
+            <div id="search-bar-container">
+                <div id="search-bar-wrapper">
+                    <input type="text" id="search-bar" placeholder="Search..">
+                </div>
+                <div class="icon-container">
+                    <a href="#"><span class="material-icons">favorite</span></a>
+                    <a href="#"><span class="material-icons">account_circle</span></a>
+                    <a href="#"><span class="material-icons">shopping_cart</span></a>
+                </div>
+            </div>
+        </header>
+        <main id="main-content">
+            <hr class="divider">
+            <h2>SHOP</h2>
+            <div id="filters">
+                <h3>Filter by</h3>
+    
+                <!--material-->
+                <label for="material">Material:</label>
+                <select id="material">
+                    <option value="all">All</option>
+                    <option value="recycled-material">Recycled Material</option>
+                    <option value="recycled-metals">Recycled Metals</option>
+                    <option value="gold">Gold</option>
+                    <option value="silver">Silver</option>
+                    <option value="plastic">Plastic</option>
+                    <option value="resin">Resin</option>
+                    <option value="pearl">Pearl</option>
+                    <option value="clay">Clay</option>
+                    <option value="ceramic">Ceramic</option>
+                    <option value="glass">Glass</option>
+                </select>
+    
+                <!--category-->
+                <label for="category">Category:</label>
+                <select id="category">
+                    <option value="all">All</option>
+                    <option value="ring">Ring</option>
+                    <option value="bracelet">Bracelet</option>
+                    <option value="necklace">Necklace</option>
+                    <option value="earrings">Earrings</option>
+                </select>
+    
+                <!--price-->
+                <label for="price">Price:</label>
+                <select id="price">
+                    <option value="all">All</option>
+                    <option value="low-to-high">Lowest to Highest</option>
+                    <option value="high-to-low">Highest to Lowest</option>
+                </select>
+            </div>
+            <div id="products-section">
+
+            </div>
+        </main>
+        <footer id="main-footer">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>Gold Pebbles</h3>
+                    <p>Timeless, sustainable jewelry crafted with purpose.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="customdesign.html">Custom Design</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><span class="material-icons">facebook</span></a>
+                        <a href="#"><span class="material-icons">instagram</span></a>
+                        <a href="#"><span class="material-icons">tiktok</span></a>
+                    </div>
+                </div>
+            </div>
+            <p class="footer-bottom">&copy; Gold Pebbles | 2025</p>
+        </footer>        
+        <a href="#" id="back-to-top">
+            <span class="material-icons">keyboard_arrow_up</span>
+        </a>
+        <script src="shop.js"></script>
+    </body>
+</html>

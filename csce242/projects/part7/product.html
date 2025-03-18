@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <!--KJTHAO - project part 6-->
+        <title>Part 6</title>
+        <link rel="stylesheet" href="product.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </header>
+    <body>
+        <header id="main-header">
+            <h1><a href="index.html">GOLD PEBBLES</a></h1>
+            <nav id="main-nav">
+                <div id="toggle-nav">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <nav id="main-nav">
+                    <ul id="nav-items" class="nav-links">
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="customdesign.html">Custom Design</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faqs.html">FAQS</a></li>
+                    </ul>
+                </nav>
+                <div id="search-bar-container">
+                    <div id="search-bar-wrapper">
+                        <input type="text" class="search-bar" placeholder="Search..">
+                    </div>
+                    <div class="icon-container">
+                        <a href="#"><span class="material-icons">favorite</span></a>
+                        <a href="#"><span class="material-icons">account_circle</span></a>
+                        <a href="#"><span class="material-icons">shopping_cart</span></a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <a href="shop.html" id="back-to-shop">
+            <span class="material-icons">keyboard_arrow_left</span>
+        </a>  
+        <main id="product-content">
+            <section id="products-section">
+                <img class="product-image" src="" alt="Product Image">
+                <div class="item-description">
+                    <h2 class="product-title"></h2>
+                    <p class="product-description"></p>
+                    <p class="product-price"></p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </section>
+             <!-- review section! -->
+            <section class="reviews-section">
+                <h3>Customer Reviews</h3>
+                <div id="reviews-container"></div>
+            </section>
+
+            <!-- review forms -->
+            <section class="add-review-section">
+                <h3>Add a Review</h3>
+                <form id="review-form">
+                    <input type="text" id="review-user" placeholder="Your Name" required />
+                    <select id="review-rating">
+                        <option value="5">⭐️⭐️⭐️⭐️⭐️</option>
+                        <option value="4">⭐️⭐️⭐️⭐️</option>
+                        <option value="3">⭐️⭐️⭐️</option>
+                        <option value="2">⭐️⭐️</option>
+                        <option value="1">⭐️</option>
+                    </select>
+                    <textarea id="review-comment" placeholder="Your review..." required></textarea>
+                    <button type="submit">Submit Review</button>
+                </form>
+            </section>
+        </main>         
+        <footer id="main-footer">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>Gold Pebbles</h3>
+                    <p>Timeless, sustainable jewelry crafted with purpose.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="customdesign.html">Custom Design</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><span class="material-icons">facebook</span></a>
+                        <a href="#"><span class="material-icons">instagram</span></a>
+                        <a href="#"><span class="material-icons">tiktok</span></a>
+                    </div>
+                </div>
+            </div>
+            <p class="footer-bottom">&copy; Gold Pebbles | 2025</p>
+        </footer>              
+        <a href="#" id="back-to-top">
+            <span class="material-icons">keyboard_arrow_up</span>
+        </a>
+        <script src="product.js"></script>
+    </body>    
+</html>

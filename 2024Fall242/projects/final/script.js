@@ -10,7 +10,9 @@ window.onscroll = myFunction;
 
 
 const getData = async () => {
-  const url = "https://kjthaoo.github.io/projects/final/data.json";
+  //const url = "https://kjthaoo.github.io/projects/final-old/data.json";
+  const url = "https://final-old/data.json";
+
 
   try {
       const response = await fetch(url);
