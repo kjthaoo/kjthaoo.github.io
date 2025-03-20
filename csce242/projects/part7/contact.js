@@ -1,3 +1,42 @@
+const form = document.querySelector('.contact-form');
+const result = document.getElementById('result');
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+  const formData = new FormData(form);
+  const object = Object.fromEntries(formData);
+  const json = JSON.stringify(object);
+  result.innerHTML = "Please wait..."
+
+    fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: json
+        })
+        .then(async (response) => {
+            let json = await response.json();
+            if (response.status == 200) {
+                result.innerHTML = "Form submitted successfully";
+            } else {
+                console.log(response);
+                result.innerHTML = json.message;
+            }
+        })
+        .catch(error => {
+            console.log(error);
+            result.innerHTML = "Something went wrong!";
+        })
+        .then(function() {
+            form.reset();
+            setTimeout(() => {
+                result.style.display = "none";
+            }, 3000);
+        });
+});
+
 document.getElementById("subscribe-form").addEventListener("submit", function(event) {
     event.preventDefault();
     var email = document.getElementById("email").value;
@@ -5,22 +44,6 @@ document.getElementById("subscribe-form").addEventListener("submit", function(ev
         document.getElementById("subscribe-message").innerHTML = "Thank you for subscribing!";
         document.getElementById("subscribe-message").classList.remove("hide-small");
         document.getElementById("email").value = "";
-    }
-});
-
-document.getElementById('message-form').addEventListener('submit', (event) => {
-    event.preventDefault();
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-    
-    if (name && email && message) {
-        document.getElementById('message-status').textContent = 'Your message has been sent successfully!';
-        document.getElementById('message-status').style.color = 'green';
-        document.getElementById('message-form').reset();
-    } else {
-        document.getElementById('message-status').textContent = 'Please fill in all fields.';
-        document.getElementById('message-status').style.color = 'red';
     }
 });
 
@@ -45,21 +68,4 @@ document.getElementById('back-to-top').addEventListener('click', (e) => {
         behavior: 'smooth'
     });
 });
-let slideIndex = 0;
 
-const showSlides = () => {
-    const slides = document.querySelectorAll(".mySlides");
-    slides.forEach((slide) => slide.style.display = "none"); // Hide all slides
-
-    slideIndex++;
-    if (slideIndex > slides.length) {
-        slideIndex = 1;
-    }
-
-    slides[slideIndex - 1].style.display = "block"; // Show the current slide
-    setTimeout(showSlides, 3000); // Change slide every 3 seconds
-};
-
-document.addEventListener("DOMContentLoaded", () => {
-    showSlides(); // Initialize the slideshow when the page loads
-});
