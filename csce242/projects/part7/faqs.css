@@ -37,9 +37,14 @@ img {
     object-fit: cover;
     transform: translateY(-50%);
 }
+
 /*faq stuff*/
 .faq-container {
-    background-color: #F5E1C6;
+    /*background-color: #F5E1C6;*/
+    background-image: url(images/faq-background.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
     width: 100%;
     max-width: 2500px;
     height: 200px;
